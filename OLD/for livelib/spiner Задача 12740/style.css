@@ -1,0 +1,44 @@
+@keyframes spin { 
+  to {
+      transform: rotate(359deg);
+  }
+}
+
+.uh-btn {
+  display: flex;
+  padding: 0;
+  background: #48b0a2;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-family: 'PT Sans', Tahoma, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;    
+  width: 75px;
+  height: 40px;
+}
+.uh-btn:after {
+  content: "Войти";
+  position: absolute;
+  height: 20px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.loading {
+  background: #7fc8be;
+}
+.uh-btn.loading:after {
+  content: "";
+  border-radius: 100%;  
+  width: 14px;
+  height: 14px;  
+  border: 2px solid rgba(255,255,255,0.5);
+  border-left-color: #FFF;
+  border-top-color: #FFF;
+  animation: spin .6s infinite linear;
+}

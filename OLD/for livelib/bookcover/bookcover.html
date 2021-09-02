@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="manifest" href="/pushmanifest.json">
+    <title id="title-head">LiveLib — сайт о книгах, социальная сеть читателей книг</title>
+    <meta name="description" content="Читайте рецензии и отзывы на книги, изучайте интересные подборки книг, выписывайте цитаты из книг, делитесь впечатлениями о книгах">    
+    <link rel="stylesheet" type="text/css" href="css/style2017.20190730.min.css">
+    <link rel="stylesheet" type="text/css" href="css/headerunreg.20190730.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.20190730.min.css">
+    <link rel="stylesheet" type="text/css" href="css/authorize.20190730.min.css">
+    <link rel="stylesheet" type="text/css" href="css/booksmenu.20190730.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mainsearch.20190730.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ubmenustyle.20190730.min.css">
+    <link id="swiper-css" href="css/swiper.20190730.min.css" rel="stylesheet">     
+    <link rel='stylesheet' id='webfont-body-css' href='https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold&subset=latin,cyrillic' type='text/css' media='all'/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap&subset=cyrillic-ext" rel="stylesheet">    
+    <link rel="stylesheet" type="text/css" href="bookcover.css"/>
+  </head>
+  <body>
+    <!--обложка произведения в слайдере-->
+      <a class="bc-empty bc-empty--work">
+        <p class="bc-empty__title">Квалия сиреневого цвета Квалия сиреневого цвета</p>
+        <p class="bc-empty__author">Уэо Хисамицу, Уэо Хисамицу, Уэо Хисамицу</p>
+      </a>
+
+    <!--обложка книги в слайдере-->
+      <a class="bc-empty">
+        <p class="bc-empty__title">Квалия сиреневого цвета Квалия сиреневого цвета</p>
+        <p class="bc-empty__author">Уэо Хисамицу, Уэо Хисамицу, Уэо Хисамицу</p>
+      </a>
+
+      <!--ТЕСТ : обложки в svg-->
+      <svg width="170" height="256" viewBox="0 0 170 256" xmlns="http://www.w3.org/2000/svg">
+        <linearGradient id="grad-work" x1="0" x2="0" y1="100%" y2="0%"><stop offset="0%" stop-color="#1c2135"/><stop offset="100%" stop-color="#525e87"/></linearGradient>
+        <style>
+          .text {font: 14px/16px "Source Sans Pro", Arial, sans-serif; color: #fff; text-align: center;}
+          .title {font-size: 20px; line-height: 24px; text-transform: uppercase;}
+        </style>
+        <rect x="0" y="0" width="170" height="256" rx="8" fill="url(#grad-work)"/>
+        <foreignObject x="12" y="20" class="text" width="146" height="20">
+          <div xmlns="http://www.w3.org/1999/xhtml">ПРОИЗВЕДЕНИЕ</div>
+        </foreignObject>
+        <foreignObject x="12" y="70" class="text title" width="146" height="96">
+          <div xmlns="http://www.w3.org/1999/xhtml">Квалия сиреневого цвета Квалия сиреневого цвета</div>
+        </foreignObject>        
+        <foreignObject x="16" y="205" class="text" width="138" height="32">
+          <div xmlns="http://www.w3.org/1999/xhtml">Уэо Хисамицу, Уэо Хисамицу, Уэо Хисамицу</div>
+        </foreignObject>
+      </svg>
+
+      <svg width="170" height="256" viewBox="0 0 170 256" xmlns="http://www.w3.org/2000/svg">
+        <linearGradient id="grad" x1="0" x2="0" y1="100%" y2="0%"><stop offset="0%" stop-color="#451724"/><stop offset="100%" stop-color="#a15871"/></linearGradient>
+        <style>
+          .text {font: 14px/16px "Source Sans Pro", Arial, sans-serif; color: #fff; text-align: center;}
+          .title {font-size: 20px; line-height: 24px; text-transform: uppercase;}
+        </style>
+        <rect x="0" y="0" width="170" height="256" rx="8" fill="url(#grad)"/>
+        <foreignObject x="12" y="50" class="text title" width="146" height="96">
+          <div xmlns="http://www.w3.org/1999/xhtml">Квалия сиреневого цвета Квалия сиреневого цвета</div>
+        </foreignObject>
+        <foreignObject x="16" y="205" class="text" width="138" height="32">
+          <div xmlns="http://www.w3.org/1999/xhtml">Уэо Хисамицу, Уэо Хисамицу, Уэо Хисамицу</div>
+        </foreignObject>
+      </svg>     
+   
+  </body>
+</html> 

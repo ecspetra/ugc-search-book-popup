@@ -1,0 +1,68 @@
+.bc-empty {
+  position: relative;
+  height: 256px;
+  width: 170px;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#451724), to(#a15871));
+  background: linear-gradient(to top, #451724, #a15871);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  font: 14px/24px "Source Sans Pro", sans-serif;
+  letter-spacing: 0.8px; }
+
+.bc-empty p {
+  display: -webkit-box;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.bc-empty__title {
+  font: 20px/24px "Source Sans Pro", sans-serif;
+  margin: 30% 7% auto;
+  -webkit-line-clamp: 4;
+  max-height: 96px;
+  text-transform: uppercase; }
+
+.bc-empty__author {
+  font: 14px/16px "Source Sans Pro", sans-serif;
+  margin: 0 7% 10%;
+  -webkit-line-clamp: 2;
+  letter-spacing: 0px;
+  height: 32px; }
+
+.bc-empty--work {
+  background: -webkit-gradient(linear, left bottom, left top, from(#1c2135), to(#525e87));
+  background: linear-gradient(to top, #1c2135, #525e87); }
+
+.bc-empty--work .bc-empty__title {
+  margin-top: 50%; }
+
+.bc-empty--work::before {
+  position: absolute;
+  content: "ПРОИЗВЕДЕНИЕ";
+  top: 9%;
+  width: 100%;
+  text-align: center; }
+
+.bc-empty p:last-child {
+  margin-bottom: 10%; }
+
+.awtr-slide__item .bc-empty {
+  width: 92px;
+  height: 136px;
+  font: 9px/12px "Source Sans Pro", sans-serif;
+  letter-spacing: 0;
+  border-radius: 6px; }
+
+.awtr-slide__item .bc-empty__title {
+  font: 12px/16px "Source Sans Pro", sans-serif; }
+
+.awtr-slide__item .bc-empty__author {
+  display: none; }

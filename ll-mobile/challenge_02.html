@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html lang="ru" class="ch02-page">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="manifest" href="/pushmanifest.json">
+    <title id="title-head">моб лендинг кв</title>
+    <meta name="description" content="Читайте рецензии и отзывы на книги, изучайте интересные подборки книг, выписывайте цитаты из книг, делитесь впечатлениями о книгах">    
+    <link rel="stylesheet" type="text/css" href="css/2016style.20191122.css">
+    <link rel="stylesheet" type="text/css" href="css/addbook2019.20191122.css">
+    <link rel="stylesheet" type="text/css" href="css/style.20191122.css">
+
+    <link rel="stylesheet" type="text/css" href="css/lentastyle.css"/>     
+  </head>
+  <body class="darkstyle">
+    <header class="page-header">
+      <div class="unreg-header-wrapper bver-1">
+        <span class="unreg-header-background"></span>
+        <div class="pad-lr unreg-header-container">
+          <div class="unreg-header">
+            <span class="uh-ll-title">Книжный портал с персональными рекомендациями и личными коллекциями</span>
+            <table class="uh-ll-stats">
+              <tbody><tr><td class="uh-ll-stats-number">15 000 000</td><td>оценок книг</td></tr>
+                    <tr><td class="uh-ll-stats-number">940 000</td><td>рецензий на книги</td></tr>
+                    <tr><td class="uh-ll-stats-number">58 000 000</td><td>книг в коллекциях</td></tr>
+              </tbody></table>
+          </div>
+        </div>
+        <div class="unreg-header-bottom">
+          <div class="unreg-header-bottom-left"></div>
+          <div class="unreg-header-bottom-middle"></div>
+          <div class="unreg-header-bottom-right"></div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="header-top pad-lr" id="header-top">
+          <a href="/" title="LiveLib — социальная сеть читателей книг" alt="LiveLib — социальная сеть читателей книг" class="logo">
+            <img alt="LiveLib — социальная сеть читателей книг" height="42" src="https://s.livelib.ru/img/skins/mobile2016/logo2.svg" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+          </a>
+          <div id="user-menu-block">
+            <span id="top-menu-block">
+              <div class="link-unreg-header" style="position: absolute;left: 50%;margin-left: -39px;">
+                <a href="javascript:void(0);" onclick="xshow('search-form-bottom');$('search-input-bottom').focus();" class="ic-search-black btn-icon opc-087"></a>
+              </div>
+              <a class="link-unreg-header" href="javascript:void(0);" onclick="loginform_show(null, null, null, 'login');">Вход</a>
+              <span class="link-unreg-sep"></span>
+              <a class="link-unreg-header" href="javascript:void(0);" onclick="loginform_show(null, null, null, 'register');">Регистрация</a>
+            </span>
+          </div>
+        </div>
+        <div class="mainmenu">
+          <div class="fade-left"></div>
+          <div class="mainmenu-inner">
+              <ul class="nav" style="">      
+                <li style="margin-left: 0px;"></li>
+                <li class=""><a href="/books">Что почитать</a></li>
+                <li class=""><a id="genre-item" href="/genres">Жанры</a></li>
+                <li class=""><a href="/authors">Авторы</a></li>
+                <li class="active"><a href="/reviews">Рецензии</a></li>
+                <li class=""><a href="/quotes">Цитаты</a></li>
+                <li class=""><a href="/selections">Подборки</a></li>
+                <li class=""><a href="/lifehacks">Лайфхаки</a></li>
+                <li class=""><a href="/groups">Группы</a></li>
+                <li class=""><a href="/novelties/selection/20233-anonsy-knig-skoro-v-prodazhe">Новинки</a></li>
+                <li class=""><a href="/publishers">Издательства</a></li>
+                <li class=""><a href="/characters">Персонажи</a></li>
+                <li class=""><a href="/readers">Читатели</a></li>
+                <li class=""><a href="/stories">Истории</a></li>
+                <li class=""><a href="/events">Мероприятия</a></li>
+                <li class=" accent"><a href="/giveaways">Раздачи</a></li>
+                <li class=""><a href="/bookswap">Книгообмен</a></li>
+                <li class=""><a href="/games">Игры</a></li>
+                <li class=""><a href="/awards">Премии</a></li>
+                <li class=""><a href="/tests">Тесты</a></li>
+                <li class=""><a href="/challenge/2019">Книжный вызов 2019</a></li>
+                <li><a href="https://www.livelib.ru/cafe">Кофейня</a></li> 
+              </ul>
+          </div>
+          <div class="fade-right"></div>
+        </div>                        
+        <div class="contextmenu">
+          <div class="contextmenu-inner" id="context-fixed" onscroll="if($('groups-context-more'))xhide($('groups-context-more'));">
+            <ul class="nav context">
+              <li class="active"><a href="/reviews"><h1>Рецензии на книги</h1></a></li>
+              <li class="standard"><a href="/reviews/topmonth">Лучшие за месяц</a></li>
+              <li class="standard"><a href="/reviews/top">Лучшие за всё время</a></li>
+              <li class="standard"><a href="/reviews/only">Единственные</a></li>
+              <li class="standard"><a href="/media/reviews">Рецензии критиков</a></li>
+            </ul>
+          </div>
+        </div>      
+      </div>
+    </header>
+
+
+    <main class="page-content challenge">
+      <div class="kv-menu">
+        <div class="kv-menu__limiter">
+          <ul class="kv-menu__list">
+            <li class="kv-menu__item kv-menu__item--active"><a href="">Мой вызов</a></li>
+            <li class="kv-menu__item"><a href="">Друзья и участники</a></li>
+            <li class="kv-menu__item"><a href="">Лента активности</a></li>
+            <li class="kv-menu__item"><a href="">Книги в КВ 2020</a></li>
+          </ul>
+          
+        </div>
+      </div>
+      <div class="kv-header">
+        
+        <a href="" class="kv-slogan"><b>Книжный </b>вызов
+          <svg width="78" height="29" viewBox="0 0 78 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.30696 14.5C6.30696 7.64186 2.56475 3.13514 2.56475 3.13514C2.56475 3.13514 2.25085 3.13512 1.59227 3.13514C-0.525041 3.13517 -0.525041 0 1.59227 0H63.425C71.4746 0 78 6.49187 78 14.5C78 22.5081 71.4746 29 63.425 29H1.58608C-0.525099 29 -0.531226 25.8679 1.58302 25.8679C1.86922 25.8679 2.56475 25.8679 2.56475 25.8679C2.56475 25.8679 6.30696 21.1499 6.30696 14.5Z" fill="#F8DB73"/>
+            <text x="11" y="23" class="kv-slogn__year">2020</text>
+          </svg>
+        </a>
+        <div class="kv-settings">
+          <a href="" class="kv-settings__link"></a>
+          <a href="" class="kv-settings__link">
+            <div><p>Книжный вызов - твой персональный челлендж, твоя мотивация читать больше!</p>
+              <p>Здесь нет точной даты старта, но есть финал — 31 декабря 2020 года.</p>
+              <br>
+              <p>Принимая участие в книжном вызове ты можешь:</p>
+              <p>- следить за своим темпом чтения</p>
+              <p>- следовать статистике, которая тебе скажет  “Сколько книг - нужно прочитать в этом месяце”</p>
+              <p>- воспользоваться рекомендациями “Что почитать”</p>
+            </div>
+          </a>
+          <a href="" class="kv-settings__link"></a>
+          <div class="kv-popup">
+            <a class="kv-popup__close"></a>
+            <p>Вы приняли книжный вызов 50 книг!</p>
+            <span>Поделиться с друзьями</span>
+            <div class="kv-popup__wrapper">                  
+              <a class="icon-vk" href="#"></a>
+              <a class="icon-fb" href="#"></a>
+              <a class="icon-ok" href="#"></a>
+              <a class="icon-tw" href="#"></a>
+              <a class="icon-mail" href="#"></a>
+              <a class="icon-lj" href="#"></a>
+              <a class="icon-li" href="#"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="kv-progress">
+        <div class="kv-progress-bar">
+          <svg viewbox="0 0 176 176">
+            <path class="kv-base-ring" d="M88 6 a 82 82 0 0 1 0 164 a 82 82 0 0 1 0 -164" stroke="#F8DB73" opacity="0.17"/>
+            <path class="kv-base-ring" d="M88 19 a 69 69 0 0 1 0 138 a 69 69 0 0 1 0 -138" stroke="#FA385D" opacity="0.23"/>
+            <path class="kv-base-ring" d="M88 32 a 56 56 0 0 1 0 112 a 56 56 0 0 1 0 -112" stroke="#64CCBB" opacity="0.23"/>
+            <!--формула: длина окружности поделенная на кол-во книг в вызове и умножем на кол-во прочитанных-->
+            <path class="kv-progress-ring" stroke-dasharray="calc(515px/50 * 63), 515px" d="M88 6 a 82 82 0 0 1 0 164 a 82 82 0 0 1 0 -164" stroke="#F8DB73"/>
+            <path class="kv-progress-ring" stroke-dasharray="calc(433px/50 * 23), 433px" d="M88 19 a 69 69 0 0 1 0 138 a 69 69 0 0 1 0 -138" stroke="#FA385D"/>                
+            <path class="kv-progress-ring" stroke-dasharray="calc(352px/50 * 0), 352px" d="M88 32 a 56 56 0 0 1 0 112 a 56 56 0 0 1 0 -112" stroke="#64CCBB"/>
+            <text x="50%" y="96" class="kv-progress-bar__percentage">50</text><!-- КОЛИЧЕСТВО КНИГ-->
+            <text x="64" y="114" class="kv-progress-bar__text">книг</text>
+          </svg>
+        </div>
+        <ul class="kv-progress-value">
+          <li><p><span class="kv-color-yellow">63</span>/ 50</p><p>Прочитал</p></li>
+          <li><p><span class="kv-color-red">23</span>/ 50</p><p>План</p></li>
+          <li><p><span class="kv-color-green">0</span></p><p>Хочу прочитать</p></li>
+        </ul>
+      </div>
+
+      <div class="kv-user">
+        <a href="">
+          <img class="kv-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">              
+        </a>
+        <p class="kv-user__name">Вызов участника <a href="">LinaSaks</a></p>
+        <p class="kv-user__slogan"><b>Девиз:</b> Все будет по-другому, новая жизнь и новые вершины, которые ты сможешь покорить. Не забывай о своих целях.</p>
+        <a class="kv-user__btn-add">Добавить в друзья</a>
+      </div>
+
+      
+
+      <article class="kv-wtr">
+        <h2 class="kv-wtr__title">Прочитанные книги в вызове – 63 из 50</h2>        
+        <div class="kv-wtr__read">
+          <ul class="slide-book__list">
+            <li class="slide-book__item">
+              <span class="slide-book__status">Новинка</span>
+              <a class="slide-book__link" href="#">
+                <img src="img/Hanya_Yanagihara__Malenkaya_zhizn.jpeg" width="100%" height="auto" alt="Танцующая на гребне волны">
+              </a>
+              <div class="slide-book__wrapper">
+                <a class="slide-book__title" href="#">Искусство легких касаний</a>
+                <div class="slide-book__menu">
+                  <div class="slide-book__menu-block">
+                    <a href="#">Поделиться</a>
+                  </div>
+                </div>
+                <a class="slide-book__author" href="#">Виктор Пелевин</a>
+                <div class="slide-book__rating">3,9</div>
+                <div id="source-buy-btn" class="btn-buy-holder">
+                  <a class="slide-book__buy" href="#">Купить</a>                        
+                </div>
+                <a class="btn-add-plus btn-add-plus--add" href=""><i></i></a>
+              </div>
+            </li>
+            <li class="slide-book__item">
+              <a class="slide-book__link" href="#">
+                <img src="img/avatar-JewelJul.png" width="100%" height="auto" alt="Танцующая на гребне волны">
+              </a>
+              <div class="slide-book__wrapper">
+                <a class="slide-book__title" href="#">Город женщин</a>
+                <div class="slide-book__menu">
+                  <div class="slide-book__menu-block">
+                    <a href="#">Поделиться</a>
+                  </div>
+                </div>
+                <a class="slide-book__author" href="#">Элизабет Гилберт</a>
+                <div class="slide-book__rating">3,9</div>
+                <div id="source-buy-btn" class="btn-buy-holder">
+                  <a class="slide-book__buy" href="#">Купить</a>                        
+                </div>
+                <a class="btn-add-plus" href=""><i></i></a>
+              </div>
+            </li>
+            <li class="slide-book__item">
+              <a class="slide-book__link" href="#">
+                <img src="img/Helen_Ueker__Golem_i_dzhinn.jpeg" width="100%" height="auto" alt="Танцующая на гребне волны">
+              </a>
+              <div class="slide-book__wrapper">
+                <a class="slide-book__title" href="#">Другая правда. Том 1</a>
+                <div class="slide-book__menu">
+                  <div class="slide-book__menu-block">
+                    <a href="#">Поделиться</a>
+                  </div>
+                </div>
+                <a class="slide-book__author" href="#">Александра Маринина</a>
+                <div class="slide-book__rating">3,9</div>
+                <div id="source-buy-btn" class="btn-buy-holder">
+                  <a class="slide-book__buy" href="#">Купить</a>                        
+                </div>
+                <a class="btn-add-plus" href=""><i></i></a>
+              </div>
+            </li>
+            <li class="slide-book__item">
+              <a class="slide-book__link" href="#">
+                <img src="img/Hanya_Yanagihara__Malenkaya_zhizn.jpeg" width="100%" height="auto" alt="Танцующая на гребне волны">
+              </a>
+              <div class="slide-book__wrapper">
+                <a class="slide-book__title" href="#">Танцующая на гребне волны</a>
+                <div class="slide-book__menu">
+                  <div class="slide-book__menu-block">
+                    <a href="#">Поделиться</a>
+                  </div>
+                </div>
+                <a class="slide-book__author" href="#">Карен Уайт</a>
+                <div class="slide-book__rating">3,9</div>
+                <div id="source-buy-btn" class="btn-buy-holder">
+                  <a class="slide-book__buy" href="#">Купить</a>                        
+                </div>
+                <a class="btn-add-plus" href=""><i></i></a>
+              </div>
+            </li>
+            <li class="slide-book__item">
+              <a class="slide-book__link" href="#">
+                <img src="img/Hanya_Yanagihara__Malenkaya_zhizn.jpeg" width="100%" height="auto" alt="Танцующая на гребне волны">
+              </a>
+              <div class="slide-book__wrapper">
+                <a class="slide-book__title" href="#">Танцующая на гребне волны</a>
+                <div class="slide-book__menu">
+                  <div class="slide-book__menu-block">
+                    <a href="#">Поделиться</a>
+                  </div>
+                </div>
+                <a class="slide-book__author" href="#">Карен Уайт</a>
+                <div class="slide-book__rating">3,9</div>                    
+                <div id="source-buy-btn" class="btn-buy-holder">
+                  <a class="slide-book__buy" href="#">Купить</a>                        
+                </div>
+                <a class="btn-add-plus" href=""><i></i></a>
+              </div>
+            </li>
+            <li class="slide-book__item">
+              <a class="slide-book__link" href="#">
+                <img src="img/avatar-JewelJul.png" width="100%" height="auto" alt="Танцующая на гребне волны">
+              </a>
+              <div class="slide-book__wrapper">
+                <a class="slide-book__title" href="#">Город женщин</a>
+                <div class="slide-book__menu">
+                  <div class="slide-book__menu-block">
+                    <a href="#">Поделиться</a>
+                  </div>
+                </div>
+                <a class="slide-book__author" href="#">Элизабет Гилберт</a>
+                <div class="slide-book__rating">3,9</div>
+                <div id="source-buy-btn" class="btn-buy-holder">
+                  <a class="slide-book__buy" href="#">Купить</a>                        
+                </div>
+                <a class="btn-add-plus" href=""><i></i></a>
+              </div>
+            </li>
+          </ul>
+          <a class="btn__show-more">Показать ещё</a>
+        </div>        
+      </article>
+      
+
+    </main>
+    
+    <footer class="page-footer">        
+      <ul class="page-footer__list">
+        <li><a href="#">Предложить улучшение</a></li>
+        <li><a href="#">Сообщить об ошибке</a></li>        
+        <li><a href="#">Связаться с администрацией</a></li>        
+        <li><a href="#">Политика обработки персональных данных</a></li>        
+        <li><a href="#">Пользовательское соглашение</a></li>        
+        <li><a href="#">Бесплатные книги</a></li>        
+        <li><a href="#">Полная версия</a></li>
+      </ul>
+      <div class="page-footer-soc">
+        <span class="page-footer-soc__title">Скачать приложение</span>
+        <a class="page-footer-soc__link icon-gp-f" href="#"></a>
+        <a class="page-footer-soc__link icon-app-f" href="#"></a>
+      </div>
+      <div class="page-footer-soc">
+        <span class="page-footer-soc__title">Мы в соцсетях</span>
+        <a class="page-footer-soc__link icon-in-f" href="#"></a>        
+        <a class="page-footer-soc__link icon-vk-f" href="#"></a>
+        <a class="page-footer-soc__link icon-fb-f" href="#"></a>
+        <a class="page-footer-soc__link icon-ok-f" href="#"></a>
+        <a class="page-footer-soc__link icon-zen-f" href="#"></a>
+      </div>
+      <div class="page-footer__wrapper">
+        <p class="page-footer__copyright">© Лайвлиб 2006-2019</p>
+        <a href="http://www.liveinternet.ru/click" target="_blank">
+          <img width="88" height="15" src="https://counter.yadro.ru/logo?26.11" alt="LiveInternet: показано число посетителей за сегодня"></a>
+        <p class="page-footer__age">16+</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>

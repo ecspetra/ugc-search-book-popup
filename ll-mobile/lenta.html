@@ -1,0 +1,1676 @@
+<!DOCTYPE HTML>
+<html lang="ru" class="page-lenta">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="manifest" href="/pushmanifest.json">
+    <title id="title-head">моб ЛЕНТА</title>
+    <meta name="description" content="Читайте рецензии и отзывы на книги, изучайте интересные подборки книг, выписывайте цитаты из книг, делитесь впечатлениями о книгах">    
+    <link rel="stylesheet" type="text/css" href="css/2016style.20191122.css">
+    <link rel="stylesheet" type="text/css" href="css/addbook2019.20191122.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/style.20191122.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="css/lentastyle.css"/>   
+  </head>
+  <body>
+
+    <header class="page-header">
+      <div class="unreg-header-wrapper bver-1">
+        <span class="unreg-header-background"></span>
+        <div class="pad-lr unreg-header-container">
+          <div class="unreg-header">
+            <span class="uh-ll-title">Книжный портал с персональными рекомендациями и личными коллекциями</span>
+            <table class="uh-ll-stats">
+              <tbody><tr><td class="uh-ll-stats-number">15 000 000</td><td>оценок книг</td></tr>
+                    <tr><td class="uh-ll-stats-number">940 000</td><td>рецензий на книги</td></tr>
+                    <tr><td class="uh-ll-stats-number">58 000 000</td><td>книг в коллекциях</td></tr>
+              </tbody></table>
+          </div>
+        </div>
+        <div class="unreg-header-bottom">
+          <div class="unreg-header-bottom-left"></div>
+          <div class="unreg-header-bottom-middle"></div>
+          <div class="unreg-header-bottom-right"></div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="header-top pad-lr" id="header-top">
+          <a href="/" title="LiveLib — социальная сеть читателей книг" alt="LiveLib — социальная сеть читателей книг" class="logo">
+            <img alt="LiveLib — социальная сеть читателей книг" height="42" src="https://s.livelib.ru/img/skins/mobile2016/logo2.svg" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+          </a>
+          <div id="user-menu-block">
+            <span id="top-menu-block">
+              <div class="link-unreg-header" style="position: absolute;left: 50%;margin-left: -39px;">
+                <a href="javascript:void(0);" onclick="xshow('search-form-bottom');$('search-input-bottom').focus();" class="ic-search-black btn-icon opc-087"></a>
+              </div>
+              <a class="link-unreg-header" href="javascript:void(0);" onclick="loginform_show(null, null, null, 'login');">Вход</a>
+              <span class="link-unreg-sep"></span>
+              <a class="link-unreg-header" href="javascript:void(0);" onclick="loginform_show(null, null, null, 'register');">Регистрация</a>
+            </span>
+          </div>
+        </div>
+        <div class="mainmenu">
+          <div class="fade-left"></div>
+          <div class="mainmenu-inner">
+              <ul class="nav" style="">      
+                <li style="margin-left: 0px;"></li>
+                <li class=""><a href="/books">Что почитать</a></li>
+                <li class=""><a id="genre-item" href="/genres">Жанры</a></li>
+                <li class=""><a href="/authors">Авторы</a></li>
+                <li class="active"><a href="/reviews">Рецензии</a></li>
+                <li class=""><a href="/quotes">Цитаты</a></li>
+                <li class=""><a href="/selections">Подборки</a></li>
+                <li class=""><a href="/lifehacks">Лайфхаки</a></li>
+                <li class=""><a href="/groups">Группы</a></li>
+                <li class=""><a href="/novelties/selection/20233-anonsy-knig-skoro-v-prodazhe">Новинки</a></li>
+                <li class=""><a href="/publishers">Издательства</a></li>
+                <li class=""><a href="/characters">Персонажи</a></li>
+                <li class=""><a href="/readers">Читатели</a></li>
+                <li class=""><a href="/stories">Истории</a></li>
+                <li class=""><a href="/events">Мероприятия</a></li>
+                <li class=" accent"><a href="/giveaways">Раздачи</a></li>
+                <li class=""><a href="/bookswap">Книгообмен</a></li>
+                <li class=""><a href="/games">Игры</a></li>
+                <li class=""><a href="/awards">Премии</a></li>
+                <li class=""><a href="/tests">Тесты</a></li>
+                <li class=""><a href="/challenge/2019">Книжный вызов 2019</a></li>
+                <li><a href="https://www.livelib.ru/cafe">Кофейня</a></li> 
+              </ul>
+          </div>
+          <div class="fade-right"></div>
+        </div>                        
+        <div class="contextmenu">
+          <div class="contextmenu-inner" id="context-fixed" onscroll="if($('groups-context-more'))xhide($('groups-context-more'));">
+            <ul class="nav context">
+              <li class="active"><a href="/reviews"><h1>Рецензии на книги</h1></a></li>
+              <li class="standard"><a href="/reviews/topmonth">Лучшие за месяц</a></li>
+              <li class="standard"><a href="/reviews/top">Лучшие за всё время</a></li>
+              <li class="standard"><a href="/reviews/only">Единственные</a></li>
+              <li class="standard"><a href="/media/reviews">Рецензии критиков</a></li>
+            </ul>
+          </div>
+        </div>      
+      </div>
+    </header>
+
+    <main class="page-content">
+      <form class="lenta-form" action="" method="post">
+        <div class="lenta-form__wrap">
+          <h1 class="lenta-form__title">Лента</h1>
+          <label for="search"></label>        
+          <input type="search" name="search" id="search" placeholder="Искать в ленте" autofocus>
+        </div>
+        <input type="checkbox" class="lenta-form__toggle" id="lenta-form__toggle"/>
+        <label for="lenta-form__toggle"></label>          
+        <div class="lenta-form__inner">
+          <div class="lenta-form__select">
+            <details>
+              <summary>Все виды активности</summary>
+              <div>
+                <a href="#">Все</a>
+                <a href="#">Положительные</a>
+                <a href="#">Нейтральные</a>
+                <a href="#">Отрицательные</a>
+                <a href="#">Без оценки</a>
+                <a href="#">Рецензии только на эту книгу</a>                        
+              </div>
+            </details>
+          </div>              
+          <input type="checkbox" class="lenta-form__check" id="lenta-form__check2" />
+          <label for="lenta-form__check2">Только активность друзей</label>
+        </div>             
+      </form>
+      <section class="lenta__list">
+        <article class="review-card lenta__item">
+          <div class="header-card">                  
+            <a class="header-card-user" href="#">
+              <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+            </a>
+            <div class="header-card__wrapper">
+              <div class="header-card__row1">
+                <a class="header-card-user__name" href="#">bookish_raccoon</a>
+                <a class="header-card__category" href="#">рецензия</a>
+              </div>
+              <div class="header-card__row2">
+                <p class="header-card-user__class">Эксперт</p>
+                <p class="header-card-user__status">Просто делюсь мыслями</p>
+              </div>
+            </div>
+            <a class="header-card__overlap" href="#">39%</a>
+            <div class="header-card__menu">
+              <div class="header-card__menu-block">
+                <a href="#">Пожаловаться</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lenta-card">
+            <div class="lenta-card-book">
+              <img class="lenta-card-book__bg" src="img/Kinana.png" width="100%" height="auto" alt="">
+              <a class="lenta-card-book__link" href="#">
+                <img class="lenta-card-book__img" src="img/Kinana.png" width="100%" height="100%" alt="">
+              </a>
+              <div class="lenta-card-book__wrapper">
+                <a class="lenta-card__book-title" href="#">Меч Предназначения (сборник)</a>
+                <p class="lenta-card__author-wrap">
+                  <a class="lenta-card__author" href="#">Анджей Сапковский</a>&#44;
+                  <a class="lenta-card__author" href="#">Анджей Сапковский</a>
+                </p>
+                <div class="lenta-card__rating">4,6</div>
+                <div class="btn-add-plus__wrapper">
+                  <a class="btn-add-plus" href="#"><i></i></a>
+                  <div class="btn-add-plus__menu-block">
+                    <p class="btn-add-plus__status">Хочу прочитать</p>
+                    <a class="btn-add-plus__change" href="#">Изменить</a>
+                  </div>
+                </div>
+              </div>                
+            </div>
+            <div class="lenta-card__details">
+              <p class="lenta-card__date">30 июня 2019 г.</p>
+              <p class="lenta-card__aliases">18K</p>
+            </div>              
+            <h3 class="lenta-card__title">
+              <span class="lenta-card__mymark">4,3</span>
+              <span class="lenta-card__spoiler">Спойлер</span>
+              <i class="lenta-card__attention" title="Модератор считает рецензию рекламной"></i>
+              <i class="lenta-card__unformat" title="Неформат"></i>
+              <a href="">Баллады пишут не для того, чтобы в них верили. Их пишут, чтобы ими волновать.</a>                
+            </h3>
+            <div class="lenta-card__text">                                 
+              <p>Второй том серии Ведьмак изменил свою атмосферу. Если в первой книге было довольно легко, забавно и юмора было прилично, то во второй упор больше делается на внутренних проблемах героев.</p>
+              <p>У него, Куколка, нет ни голоса, ни слуха, а срифмовать он может только «попа» и «жопа». Это представитель цеха ведьмаков, Геральт из Ривии.</p>
+              <p>Тут есть и любовные терзания, и философские подтексты, и рефлексия персонажей. Читателю показывают трудности отношений Геральта и Йеннифер, знакомят с Предназначением. Здесь же читатель впервые встречает Цири.</p>
+              <br>                
+              <p>Большая часть книги протекает в этакой таинственной атмосфере. Местами я даже не совсем понимала, что происходит и почему всё так получается. Ближе к концу автор начинает подсовывать флэшбеки, в которых я поначалу путалась, но от страницы к странице всё становилось яснее.</p>
+              <p>Единственное, что можно сделать, это подойти к вопросу философски, то есть сказать себе: «Хрен с ним».</p>
+              <p>И вот, несмотря на то, что по ходу книги я частенько задавалась вопросом "Да что, чёрт вас дери, здесь происходит?", дочитав последнюю страницу у меня на языке была лишь фраза "Как же это было круто!"</p>
+              <div class="lenta-card__thanks"><a href="">KatrinBelous</a> большое спасибо за подарок! :)</div>
+              <div class="lenta-card__thanks"><a href="#">Tarakosha</a> большое спасибо!</div>
+              <div class="lenta-card__thanks"><a href="#">Little_Dorrit</a> большое спасибо!</div>
+            </div>
+          </div>
+
+          <div class="footer-card">
+            <div class="footer-card__soc-active sab">
+              <a class="sab__link icon-like" href="#">179</a>
+              <a class="sab__link icon-comment" href="#">231</a>
+              <a class="sab__link icon-bookmark" href="#">38</a>
+            </div>
+            <div class="sab__wrapper"> 
+                <a class="sab__link icon-share" href="#">38</a>
+                <div class="sab__detailing">                  
+                  <p class="sab__title">Поделится</p>
+                  <p class="sab__text">Выберите социальную сеть</p>
+                  <div class="sab__inner-detailing">                   
+                    <a class="sab__user icon-vk" href="#"></a>
+                    <a class="sab__user icon-fb" href="#"></a>
+                    <a class="sab__user icon-ok" href="#"></a>
+                    <a class="sab__user icon-tw" href="#"></a>
+                    <a class="sab__user icon-mail" href="#"></a>
+                    <a class="sab__user icon-lj" href="#"></a>
+                    <a class="sab__user icon-li" href="#"></a>
+                  </div>
+                </div>
+              </div>                 
+          </div>
+        </article>
+
+        <article class="lifehack-card lenta__item">
+          <div class="header-card">
+              <a class="header-card-user">
+                <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+              </a>
+              <a class="header-card-user__name" href="#">BookMonster23</a>
+              <a class="header-card__category" href="#">лайфхак</a>
+              <a class="header-card__overlap" href="#">39%</a>
+              <div class="header-card__menu">
+                <div class="header-card__menu-block">
+                  <a href="#">Пожаловаться</a>
+                </div>
+              </div>
+          </div>
+          <div class="lenta-card">
+            <div class="lenta-card__wrapper">
+              <div class="lenta-card__details">
+                <p class="lenta-card__date">30 июня 2019 г.</p>
+                <p class="lenta-card__aliases">18K</p>
+              </div> 
+              <h3 class="lenta-card__title"><a href="">Как полюбить чтение школьнику XXI века</a></h3>
+              <div class="lenta-card__text">
+                <p>Алина Сладкова утверждает, что, прочитав "Как роман", школьник может перейти от "надо читать" к "люблю читать". Книга шикарна! Попробуйте! Думаю, поможет)</p>
+              </div>
+              <div class="lenta-card-tags">
+                <div class="lenta-card-tags__limiter">
+                  <ul class="lenta-card-tags__list">
+                    <li class="lenta-card-tags__item"><a href="#">Детская литература</a></li>
+                    <li class="lenta-card-tags__item"><a href="#">Внекласcное чтение</a></li>
+                    <li class="lenta-card-tags__item"><a href="#">Еще</a></li>                        
+                  </ul>
+                </div>
+              </div>
+            </div>              
+            <div class="lenta-card-book">                     
+              <a class="lenta-card-book__link">
+                <img class="lenta-card-book__img" src="img/Kinana.png" width="100%" height="100%" alt="">
+              </a>
+              <div class="lenta-card-book__wrapper">
+                <a class="lenta-card__book-title">Как роман</a>
+                <p class="lenta-card__author-wrap">
+                  <a class="lenta-card__author" href="#">Даниэль Пеннак</a>&#44;
+                  <a class="lenta-card__author" href="#">Анджей Сапковский</a>
+                </p>     
+                <div class="lenta-card__rating">4,3</div>
+                <div class="btn-add-plus__wrapper">
+                  <a class="btn-add-plus" href="#"><i></i></a>
+                  <div class="btn-add-plus__menu-block">
+                    <p class="btn-add-plus__status">Хочу прочитать</p>
+                    <a class="btn-add-plus__change" href="#">Изменить</a>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="footer-card">
+              <div class="footer-card__soc-active">
+                <a class="sab__link icon-like" href="#">179</a>
+                <a class="sab__link icon-comment" href="#">231</a>
+                <a class="sab__link icon-bookmark" href="#">38</a>
+              </div>
+              <div class="sab__wrapper"> 
+                  <a class="sab__link icon-share" href="#">38</a>
+                  <div class="sab__detailing">
+                    <p class="sab__title">Поделится</p>
+                    <p class="sab__text">Выберите социальную сеть</p>
+                    <div class="sab__inner-detailing">                   
+                      <a class="sab__user icon-vk" href="#"></a>
+                      <a class="sab__user icon-fb" href="#"></a>
+                      <a class="sab__user icon-ok" href="#"></a>
+                      <a class="sab__user icon-tw" href="#"></a>
+                      <a class="sab__user icon-mail" href="#"></a>
+                      <a class="sab__user icon-lj" href="#"></a>
+                      <a class="sab__user icon-li" href="#"></a>
+                    </div>
+                  </div>
+              </div>                  
+          </div>
+        </article>               
+        
+        <article class="quote-card lenta__item">
+          <div class="header-card">
+            <a class="header-card-user" href="/reader/JewelJul">
+              <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+            </a>
+            <a class="header-card-user__name" href="#">KatrinBelous</a>
+            <a class="header-card__category" href="#">цитата</a>
+            <a class="header-card__overlap" href="#">39%</a>
+            <div class="header-card__menu">
+              <div class="header-card__menu-block">
+                <a href="#">Пожаловаться</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lenta-card">              
+            <div class="lenta-card__text lenta-card__text--big">
+              <a href="">
+                <p>Это планета парадоксов. Ничто не существует, но прочность и постоянство этого ничто не подлежит сомнению.</p>
+              </a>
+            </div>
+            <div class="lenta-card-book">
+              <a class="lenta-card-book__link" href="#">
+                <img class="lenta-card-book__img" src="img/Guzel_Yahina__Zulejha_otkryvaet_glaza.jpeg" width="100%" height="100%" alt="">
+              </a>
+              <div class="lenta-card-book__wrapper">
+                <a class="lenta-card__book-title" href="#">Пфитц</a>
+                <p class="lenta-card__author-wrap">
+                  <a class="lenta-card__author" href="#">Эндрю Крами</a>&#44;
+                  <a class="lenta-card__author" href="#">Анджей Сапковский</a>
+                </p>
+                <div class="lenta-card__rating">4,3</div>
+                <div class="btn-add-plus__wrapper">
+                  <a class="btn-add-plus" href="#"><i></i></a>
+                  <div class="btn-add-plus__menu-block">
+                    <p class="btn-add-plus__status">Хочу прочитать</p>
+                    <a class="btn-add-plus__change" href="#">Изменить</a>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>
+  
+          <div class="footer-card">
+            <div class="footer-card__soc-active">
+              <a class="sab__link icon-like" href="#">179</a>
+              <a class="sab__link icon-quote sab__link--active" href="#">231</a>
+              <a class="sab__link icon-bookmark" href="#">38</a>
+            </div>
+            <div class="sab__wrapper"> 
+                <a class="sab__link icon-share" href="#">38</a>
+                <div class="sab__detailing">
+                  <p class="sab__title">Поделится</p>
+                  <p class="sab__text">Выберите социальную сеть</p>
+                  <div class="sab__inner-detailing">                   
+                    <a class="sab__user icon-vk" href="#"></a>
+                    <a class="sab__user icon-fb" href="#"></a>
+                    <a class="sab__user icon-ok" href="#"></a>
+                    <a class="sab__user icon-tw" href="#"></a>
+                    <a class="sab__user icon-mail" href="#"></a>
+                    <a class="sab__user icon-lj" href="#"></a>
+                    <a class="sab__user icon-li" href="#"></a>
+                  </div>
+                </div>
+              </div>                  
+          </div>
+        </article>
+
+        <article class="histories-card lenta__item">            
+          <div class="header-card">
+            <a class="header-card-user" href="#">
+              <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+            </a>
+            <a class="header-card-user__name" href="#">JewelJul</a>
+            <a class="header-card__category" href="#">история</a>
+            <a class="header-card__overlap" href="#">39%</a>
+            <div class="header-card__menu">
+              <div class="header-card__menu-block">
+                <a href="#">Пожаловаться</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lenta-card">
+            <div class="lenta-card-book">
+              <img class="lenta-card__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+              <div class="lenta-card-book__wrapper">
+                <a class="lenta-card__book-title" href="#">Над горой играет свет</a>
+                <p class="lenta-card__author-wrap">
+                  <a class="lenta-card__author" href="#">Кэтрин Мадженди</a>&#44;
+                  <a class="lenta-card__author" href="#">Анджей Сапковский</a>&#44;
+                  <a class="lenta-card__author" href="#">Анджей Сапковский</a>
+                </p>                  
+                <a class="lenta-card-book__link" href="#">
+                  <img class="lenta-card-book__img" src="img/Guzel_Yahina__Zulejha_otkryvaet_glaza.jpeg" width="100%" height="100%" alt="">
+                </a>
+                <div class="lenta-card__rating">4,3</div>
+                <div class="btn-add-plus__wrapper">
+                  <a class="btn-add-plus btn-add-plus--add" href="#"><i></i></a>
+                  <div class="btn-add-plus__menu-block">
+                    <p class="btn-add-plus__status">Хочу прочитать</p>
+                    <a class="btn-add-plus__change" href="#">Изменить</a>
+                  </div>
+                </div>
+              </div>                
+            </div>
+            <div class="lenta-card__details">
+              <p class="lenta-card__date">30 июня 2019 г.</p>
+              <p class="lenta-card__aliases">18K</p>
+            </div>
+            <h3 class="lenta-card__title"><a href="">Мое отношение к недочитанным книгам</a></h3>    
+            <div class="lenta-card__text">
+              <p>К недочитанным книгам у меня особое отношение. Множественное. Во-первых, они мне не нравятся. Не зря же я их бросила. Стиль, слог, идея, сюжет. Перечислять можно долго, но суть одна. Отторжение.</p>
+              <p>Во-вторых, они мне интересны. В голове возникают десятки вопросов к самой себе. А почему не нравится эта тема? Что в ней такого, что вызывает столь острое неприятие, что вызывает столь острое неприя недочитанным книгам у меня особое отношение. Множественное. Во-первых, они мне не нравятся. Не зря же я их бросила. Стиль, слог, идея, сюжет...</p>
+            </div>
+          </div>
+
+          <div class="footer-card">
+            <div class="footer-card__soc-active sab">
+              <a class="sab__link icon-like sab__link--active" href="#">179</a>
+              <a class="sab__link icon-comment" href="#">231</a>                
+              <a class="sab__link icon-bookmark sab__link--active" href="#">38</a>                
+            </div>
+            <div class="sab__wrapper"> 
+              <a class="sab__link icon-share" href="#">38</a>
+              <div class="sab__detailing">
+                <p class="sab__title">Поделится</p>
+                <p class="sab__text">Выберите социальную сеть</p>
+                <div class="sab__inner-detailing">                   
+                  <a class="sab__user icon-vk" href="#"></a>
+                  <a class="sab__user icon-fb" href="#"></a>
+                  <a class="sab__user icon-ok" href="#"></a>
+                  <a class="sab__user icon-tw" href="#"></a>
+                  <a class="sab__user icon-mail" href="#"></a>
+                  <a class="sab__user icon-lj" href="#"></a>
+                  <a class="sab__user icon-li" href="#"></a>
+                </div>
+              </div>
+            </div>                    
+          </div>
+        </article>          
+
+        <article class="quote-card lenta__item">
+          <div class="header-card">
+            <a class="header-card-user" href="/reader/JewelJul">
+              <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+              <p class="header-card-user__name">KatrinBelous</p>
+            </a>
+            <a class="header-card__category" href="#">цитата</a>
+            <a class="header-card__overlap" href="#">39%</a>
+            <div class="header-card__menu">
+              <div class="header-card__menu-block">
+                <a href="#">Пожаловаться</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lenta-card">               
+            <div class="lenta-card__text">
+              <a href="">
+                <p>Но надежды снова попасть туда он не оставлял и на границе своего имения водрузил столб с надписью: «Деревня Его Сиятельства Кириллы княж-сына Андреевича Косого – Дубовые Горки Но надежды снова попасть туда он не оставлял и на границе своего имения водрузил столб с надписью: «Деревня Его Сиятельства Кириллы княж-сына Андреевича Косого – Дубовые Горки</p>
+              </a>
+            </div>              
+            <div class="lenta-card-book">
+              <a class="lenta-card-book__link" href="#">
+                <img class="lenta-card-book__img" src="img/Guzel_Yahina__Zulejha_otkryvaet_glaza.jpeg" width="100%" height="100%" alt="">
+              </a>
+              <div class="lenta-card-book__wrapper">
+                <a class="lenta-card__book-title" href="#">Забытые хоромы</a>
+                <p class="lenta-card__author-wrap">
+                  <a class="lenta-card__author" href="#">Михаил Волконский</a>&#44;
+                  <a class="lenta-card__author" href="#">Анджей Сапковский</a>
+                </p>
+                <div class="lenta-card__rating">4,0</div>
+                <div class="btn-add-plus__wrapper">
+                  <a class="btn-add-plus" href="#"><i></i></a>
+                  <div class="btn-add-plus__menu-block">
+                    <p class="btn-add-plus__status">Хочу прочитать</p>
+                    <a class="btn-add-plus__change" href="#">Изменить</a>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="footer-card">
+            <div class="footer-card__soc-active">
+              <a class="sab__link icon-like" href="#">179</a>
+              <a class="sab__link icon-quote" href="#">231</a>
+              <a class="sab__link icon-bookmark" href="#">38</a>
+            </div>
+            <div class="sab__wrapper"> 
+                <a class="sab__link icon-share" href="#">38</a>
+                <div class="sab__detailing">
+                  <p class="sab__title">Поделится</p>
+                  <p class="sab__text">Выберите социальную сеть</p>
+                  <div class="sab__inner-detailing">                   
+                    <a class="sab__user icon-vk" href="#"></a>
+                    <a class="sab__user icon-fb" href="#"></a>
+                    <a class="sab__user icon-ok" href="#"></a>
+                    <a class="sab__user icon-tw" href="#"></a>
+                    <a class="sab__user icon-mail" href="#"></a>
+                    <a class="sab__user icon-lj" href="#"></a>
+                    <a class="sab__user icon-li" href="#"></a>
+                  </div>
+                </div>
+            </div>                  
+          </div>
+        </article>
+
+        <div class="statuses-slide lenta__item">
+          <h3 class="lenta__title">События друзей</h3>
+          <div class="statuses__wrapper">
+            <div class="statuses__limiter">
+              <ul class=statuses__list>
+                <li class="statuses-card">
+                  <div class="header-card">
+                    <a class="header-card-user" href="/reader/scar_head">
+                      <img class="header-card-user__avatar" src="img/scar_head.jpg" width="100%" height="100%" alt="scar_head">
+                    </a>
+                    <p class="header-card__date" href="#">6 часов назад</p>
+                    <a class="header-card-user__name" href="#">Scar_Head</a>
+                    <div class="header-card__category" href="#">Прочитал книгу <span class="lenta-card__mymark">5</span></div>
+                  </div>
+                  <div class="lenta-card-book">
+                    <a class="lenta-card-book__link" href="#">
+                      <img class="lenta-card-book__img" src="img/strelok.jpg" width="100%" height="100%" alt="">
+                    </a>
+                    <div class="lenta-card-book__wrapper">
+                      <a class="lenta-card__book-title" href="#">Стрелок. Извлечение троих. Бесплодные...</a>
+                      <p class="lenta-card__author-wrap">
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>&#44;
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>
+                      </p>
+                      <div class="btn-add-plus__wrapper">
+                        <a class="btn-add-plus" href="#"><i></i></a>
+                        <div class="btn-add-plus__menu-block">
+                          <p class="btn-add-plus__status">Хочу прочитать</p>
+                          <a class="btn-add-plus__change" href="#">Изменить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>                  
+                <li class="statuses-card">
+                  <div class="header-card">
+                    <a class="header-card-user" href="/reader/JewelJul">
+                      <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+                    </a>
+                    <p class="header-card__date" href="#">15 часов назад</p>
+                    <a class="header-card-user__name" href="#">BoshartAmove</a>
+                    <div class="header-card__category" href="#">понравилась рецензия <a href="">Swetlanka</a> на книгу</div>
+                  </div>
+                  <div class="lenta-card-book">
+                    <a class="lenta-card-book__link" href="#">
+                      <img class="lenta-card-book__img" src="img/Guzel_Yahina__Zulejha_otkryvaet_glaza.jpeg" width="100%" height="100%" alt="">
+                    </a>
+                    <div class="lenta-card-book__wrapper">
+                      <a class="lenta-card__book-title" href="#">Оно</a>
+                      <p class="lenta-card__author-wrap">
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>&#44;
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>
+                      </p>
+                      <div class="btn-add-plus__wrapper">
+                        <a class="btn-add-plus" href="#"><i></i></a>
+                        <div class="btn-add-plus__menu-block">
+                          <p class="btn-add-plus__status">Хочу прочитать</p>
+                          <a class="btn-add-plus__change" href="#">Изменить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="statuses-card">
+                  <div class="header-card">
+                    <a class="header-card-user" href="/reader/JewelJul">
+                      <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+                    </a>
+                    <p class="header-card__date" href="#">6 часов назад</p>
+                    <a class="header-card-user__name" href="#">Scar_Head</a>
+                    <div class="header-card__category" href="#">Прочитал книгу <span class="lenta-card__mymark">5</span></div>
+                  </div>
+                  <div class="lenta-card-book">
+                    <a class="lenta-card-book__link" href="#">
+                      <img class="lenta-card-book__img" src="img/Guzel_Yahina__Zulejha_otkryvaet_glaza.jpeg" width="100%" height="100%" alt="">
+                    </a>
+                    <div class="lenta-card-book__wrapper">
+                      <a class="lenta-card__book-title" href="#">Стрелок. Извлечение троих. Бесплодные...</a>
+                      <p class="lenta-card__author-wrap">
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>&#44;
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>
+                      </p>
+                      <div class="btn-add-plus__wrapper">
+                        <a class="btn-add-plus" href="#"><i></i></a>
+                        <div class="btn-add-plus__menu-block">
+                          <p class="btn-add-plus__status">Хочу прочитать</p>
+                          <a class="btn-add-plus__change" href="#">Изменить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="statuses-card">
+                  <div class="header-card">
+                    <a class="header-card-user" href="/reader/JewelJul">
+                      <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+                    </a>
+                    <p class="header-card__date" href="#">6 часов назад</p>
+                    <a class="header-card-user__name" href="#">Scar_Head</a>
+                    <div class="header-card__category" href="#">Прочитал книгу <span class="lenta-card__mymark">5</span></div>
+                  </div>
+                  <div class="lenta-card-book">
+                    <a class="lenta-card-book__link" href="#">
+                      <img class="lenta-card-book__img" src="img/Guzel_Yahina__Zulejha_otkryvaet_glaza.jpeg" width="100%" height="100%" alt="">
+                    </a>
+                    <div class="lenta-card-book__wrapper">
+                      <a class="lenta-card__book-title" href="#">Стрелок. Извлечение троих. Бесплодные...</a>
+                      <p class="lenta-card__author-wrap">
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>&#44;
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>
+                      </p>
+                      <div class="btn-add-plus__wrapper">
+                        <a class="btn-add-plus" href="#"><i></i></a>
+                        <div class="btn-add-plus__menu-block">
+                          <p class="btn-add-plus__status">Хочу прочитать</p>
+                          <a class="btn-add-plus__change" href="#">Изменить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>          
+
+        <article class="event-card lenta__item">
+          <div class="header-card">                  
+            <a class="header-card-user" href="#">
+              <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+            </a>
+            <a class="header-card-user__name" href="#">info</a>
+            <a class="header-card__category" href="#">мероприятие</a>
+            <div class="header-card__menu">
+              <div class="header-card__menu-block">
+                <a href="#">Пожаловаться</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lenta-card">
+            <a class="lenta-card-book__link" href="#">
+              <div class="lenta-card__picture-wrapper">
+                <img class="lenta-card__picture" src="img/Kinana.png" width="100%" height="100%">
+              </div>
+              <div class="lenta-card-date">
+                <span class="lenta-card-date__day">16</span>
+                <span class="lenta-card-date__month">июля</span>
+                <span class="lenta-card-date__time">19:15</span>
+              </div>              
+            </a>
+          
+            <div class="lenta-card__details">
+              <a href="#" class="lenta-card__location">Москва</a>
+              <a href="#" class="lenta-card__aliases">Встречи с авторами</a>
+            </div>
+            <h3 class="lenta-card__title">
+              <span class="lenta-card__date-event">16 июля </span>
+              <a href="">Слова и музыка Дэвида Кинана: как андеграундный рокер стал известным писателем?</a>
+            </h3>             
+            <div class="lenta-card__text">
+              <a href="">                 
+                <p>Дэвид Кинан прошёл путь от музыканта в группе «18 Wheeler», выступавшей, в числе прочего, на разогреве у «Oasis», до ведущего музыкального критика в культовом издании «TheДэвид Кинан прошёл путь от музыканта в группе «18 Wheeler», выступавшей, в числе прочего, на разогреве у «Oasis», до ведущего музыкального критика в культовом издании «The</p>
+              </a>
+            </div>
+          </div>
+  
+          <div class="footer-card">
+            <div class="footer-card__soc-active sab">
+              <a class="sab__link icon-like" href="#">179</a>
+              <a class="sab__link icon-comment" href="#">231</a>
+              <a class="sab__link icon-bookmark" href="#">38</a>
+            </div>
+            <div class="sab__wrapper"> 
+                <a class="sab__link icon-share" href="#">38</a>
+                <div class="sab__detailing">
+                  <p class="sab__title">Поделится</p>
+                  <p class="sab__text">Выберите социальную сеть</p>
+                  <div class="sab__inner-detailing">                   
+                    <a class="sab__user icon-vk" href="#"></a>
+                    <a class="sab__user icon-fb" href="#"></a>
+                    <a class="sab__user icon-ok" href="#"></a>
+                    <a class="sab__user icon-tw" href="#"></a>
+                    <a class="sab__user icon-mail" href="#"></a>
+                    <a class="sab__user icon-lj" href="#"></a>
+                    <a class="sab__user icon-li" href="#"></a>
+                  </div>
+                </div>
+              </div>                 
+          </div>
+        </article>
+
+        <div class="statuses-slide lenta__item">
+          <h3 class="lenta__title">События друзей</h3>
+          <div class="statuses__wrapper">
+            <div class="statuses__limiter">
+              <ul class=statuses__list>
+                <li class="statuses-card">
+                  <div class="header-card">
+                    <a class="header-card-user" href="/reader/scar_head">
+                      <img class="header-card-user__avatar" src="img/scar_head.jpg" width="100%" height="100%" alt="scar_head">
+                    </a>
+                    <p class="header-card__date" href="#">6 часов назад</p>
+                    <a class="header-card-user__name" href="#">Scar_Head</a>
+                    <div class="header-card__category" href="#">хочет прочитать книгу</div>
+                  </div>
+                  <div class="lenta-card-book">
+                    <a class="lenta-card-book__link" href="#">
+                      <img class="lenta-card-book__img" src="img/strelok.jpg" width="100%" height="100%" alt="">
+                    </a>
+                    <div class="lenta-card-book__wrapper">
+                      <a class="lenta-card__book-title" href="#">Стрелок. Извлечение троих. Бесплодные...</a>
+                      <p class="lenta-card__author-wrap">
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>&#44;
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>
+                      </p>
+                      <div class="btn-add-plus__wrapper">
+                        <a class="btn-add-plus" href="#"><i></i></a>
+                        <div class="btn-add-plus__menu-block">
+                          <p class="btn-add-plus__status">Хочу прочитать</p>
+                          <a class="btn-add-plus__change" href="#">Изменить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>                  
+                <li class="statuses-card">
+                  <div class="header-card">
+                    <a class="header-card-user" href="/reader/JewelJul">
+                      <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+                    </a>
+                    <p class="header-card__date" href="#">15 часов назад</p>
+                    <a class="header-card-user__name" href="#">BoshartAmove</a>
+                    <div class="header-card__category" href="#">добавила книгу в книгообмен</div>
+                  </div>
+                  <div class="lenta-card-book">
+                    <a class="lenta-card-book__link" href="#">
+                      <img class="lenta-card-book__img" src="img/Guzel_Yahina__Zulejha_otkryvaet_glaza.jpeg" width="100%" height="100%" alt="">
+                    </a>
+                    <div class="lenta-card-book__wrapper">
+                      <a class="lenta-card__book-title" href="#">Оно</a>
+                      <p class="lenta-card__author-wrap">
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>&#44;
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>
+                      </p>
+                      <div class="btn-add-plus__wrapper">
+                        <a class="btn-add-plus" href="#"><i></i></a>
+                        <div class="btn-add-plus__menu-block">
+                          <p class="btn-add-plus__status">Хочу прочитать</p>
+                          <a class="btn-add-plus__change" href="#">Изменить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="statuses-card">
+                  <div class="header-card">
+                    <a class="header-card-user" href="/reader/JewelJul">
+                      <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+                    </a>
+                    <p class="header-card__date" href="#">6 часов назад</p>
+                    <a class="header-card-user__name" href="#">Scar_Head</a>
+                    <div class="header-card__category" href="#">Прочитал книгу <span class="lenta-card__mymark">5</span></div>
+                  </div>
+                  <div class="lenta-card-book">
+                    <a class="lenta-card-book__link" href="#">
+                      <img class="lenta-card-book__img" src="img/Guzel_Yahina__Zulejha_otkryvaet_glaza.jpeg" width="100%" height="100%" alt="">
+                    </a>
+                    <div class="lenta-card-book__wrapper">
+                      <a class="lenta-card__book-title" href="#">Стрелок. Извлечение троих. Бесплодные...</a>
+                      <p class="lenta-card__author-wrap">
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>&#44;
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>
+                      </p>
+                      <div class="btn-add-plus__wrapper">
+                        <a class="btn-add-plus" href="#"><i></i></a>
+                        <div class="btn-add-plus__menu-block">
+                          <p class="btn-add-plus__status">Хочу прочитать</p>
+                          <a class="btn-add-plus__change" href="#">Изменить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="statuses-card">
+                  <div class="header-card">
+                    <a class="header-card-user" href="/reader/JewelJul">
+                      <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+                    </a>
+                    <p class="header-card__date" href="#">6 часов назад</p>
+                    <a class="header-card-user__name" href="#">Scar_Head</a>
+                    <div class="header-card__category" href="#">Прочитал книгу <span class="lenta-card__mymark">5</span></div>
+                  </div>
+                  <div class="lenta-card-book">
+                    <a class="lenta-card-book__link" href="#">
+                      <img class="lenta-card-book__img" src="img/Guzel_Yahina__Zulejha_otkryvaet_glaza.jpeg" width="100%" height="100%" alt="">
+                    </a>
+                    <div class="lenta-card-book__wrapper">
+                      <a class="lenta-card__book-title" href="#">Стрелок. Извлечение троих. Бесплодные...</a>
+                      <p class="lenta-card__author-wrap">
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>&#44;
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>
+                      </p>
+                      <div class="btn-add-plus__wrapper">
+                        <a class="btn-add-plus" href="#"><i></i></a>
+                        <div class="btn-add-plus__menu-block">
+                          <p class="btn-add-plus__status">Хочу прочитать</p>
+                          <a class="btn-add-plus__change" href="#">Изменить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <article class="selection-card lenta__item">
+          <div class="header-card">
+            <a class="header-card-user" href="/reader/JewelJul">
+              <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+              <p class="header-card-user__name">VaLeon</p>
+            </a>
+            <a class="header-card__category" href="#">подборка</a>
+            <a class="header-card__add-select" href=""></a>
+            <div class="header-card__menu">
+              <div class="header-card__menu-block">                
+                <a href="#">Пожаловаться</a>
+              </div>
+            </div>
+          </div>
+          <div class="lenta-card">
+            <div class="lenta-card-book">
+              <h3 class="lenta-card__title"><a href="">Самые популярные книги 2019 года по версии сайта Goodreads</a></h3>
+              <div class="lenta-card__count-book"><span>14</span> книг</div>
+              <div class="lenta-card__wrap">
+                <a class="lenta-card-book__link" href="#">
+                  <img class="lenta-card-book__img" src="img/Andzhej_Sapkovskij__Mech_Prednaznacheniya_sbornik.jpg" width="100%" height="100%" alt="">
+                </a>
+                <a class="lenta-card-book__link" href="#">
+                  <img class="lenta-card-book__img" src="img/Andzhej_Sapkovskij__Mech_Prednaznacheniya_sbornik.jpg" width="100%" height="100%" alt="">
+                </a>
+                <a class="lenta-card-book__link" href="#">
+                  <img class="lenta-card-book__img" src="img/Andzhej_Sapkovskij__Mech_Prednaznacheniya_sbornik.jpg" width="100%" height="100%" alt="">
+                </a>
+                <a class="lenta-card-book__link" href="#">
+                  <img class="lenta-card-book__img" src="img/Andzhej_Sapkovskij__Mech_Prednaznacheniya_sbornik.jpg" width="100%" height="100%" alt="">
+                </a>
+                <a class="lenta-card-book__link" href="#">
+                  <img class="lenta-card-book__img" src="img/Andzhej_Sapkovskij__Mech_Prednaznacheniya_sbornik.jpg" width="100%" height="100%" alt="">
+                </a>
+                <a class="lenta-card-book__link" href="#">
+                  <img class="lenta-card-book__img" src="img/Andzhej_Sapkovskij__Mech_Prednaznacheniya_sbornik.jpg" width="100%" height="100%" alt="">
+                </a>
+                <a class="lenta-card-book__link" href="#">
+                  <img class="lenta-card-book__img" src="img/Andzhej_Sapkovskij__Mech_Prednaznacheniya_sbornik.jpg" width="100%" height="100%" alt="">
+                </a>
+                <a class="lenta-card-book__link" href="#">
+                  <img class="lenta-card-book__img" src="img/Andzhej_Sapkovskij__Mech_Prednaznacheniya_sbornik.jpg" width="100%" height="100%" alt="">
+                </a>                  
+              </div>                            
+            </div>              
+            <a class="lenta-card__show-all">Показать всё</a>
+            <div class="lenta-card__details">
+              <p class="lenta-card__date">30 июня 2019 г.</p>
+              <p class="lenta-card__aliases">18K</p>
+            </div>
+                        
+            <div class="lenta-card__text">                 
+              <p>Что ж, на различных литературных сайтах я часто сталкиваюсь со списками (ТОПами) самых переоцененных книг по версии всяких влиятельных (или никому не известных) организаций. А хотелось на различных литературных сайтах я часто сталкива на...</p>
+            </div>
+          </div>
+
+          <div class="footer-card">
+            <div class="footer-card__soc-active">
+              <a class="sab__link icon-like" href="#">179</a>
+              <a class="sab__link icon-comment" href="#">231</a>
+              <a class="sab__link icon-bookmark" href="#">38</a>
+            </div>
+            <div class="sab__wrapper"> 
+              <a class="sab__link icon-share" href="#">38</a>
+              <div class="sab__detailing">
+                <p class="sab__title">Поделится</p>
+                <p class="sab__text">Выберите социальную сеть</p>
+                <div class="sab__inner-detailing">                   
+                  <a class="sab__user icon-vk" href="#"></a>
+                  <a class="sab__user icon-fb" href="#"></a>
+                  <a class="sab__user icon-ok" href="#"></a>
+                  <a class="sab__user icon-tw" href="#"></a>
+                  <a class="sab__user icon-mail" href="#"></a>
+                  <a class="sab__user icon-lj" href="#"></a>
+                  <a class="sab__user icon-li" href="#"></a>
+                </div>
+              </div>
+            </div>                  
+          </div>
+        </article>
+
+        <div class="statuses-slide lenta__item">
+          <h3 class="lenta__title">События друзей</h3>
+          <div class="statuses__wrapper">
+            <div class="statuses__limiter">
+              <ul class=statuses__list>
+                <li class="statuses-card">
+                  <div class="header-card">
+                    <a class="header-card-user" href="/reader/scar_head">
+                      <img class="header-card-user__avatar" src="img/scar_head.jpg" width="100%" height="100%" alt="scar_head">
+                    </a>
+                    <p class="header-card__date" href="#">6 часов назад</p>
+                    <a class="header-card-user__name" href="#">Scar_Head</a>
+                    <div class="header-card__category" href="#">отметил "Хочу книгу"</div>
+                  </div>
+                  <div class="lenta-card-book">
+                    <a class="lenta-card-book__link" href="#">
+                      <img class="lenta-card-book__img" src="img/strelok.jpg" width="100%" height="100%" alt="">
+                    </a>
+                    <div class="lenta-card-book__wrapper">
+                      <a class="lenta-card__book-title" href="#">Стрелок. Извлечение троих. Бесплодные...</a>
+                      <p class="lenta-card__author-wrap">
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>&#44;
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>
+                      </p>
+                      <div class="btn-add-plus__wrapper">
+                        <a class="btn-add-plus" href="#"><i></i></a>
+                        <div class="btn-add-plus__menu-block">
+                          <p class="btn-add-plus__status">Хочу прочитать</p>
+                          <a class="btn-add-plus__change" href="#">Изменить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>                  
+                <li class="statuses-card">
+                  <div class="header-card">
+                    <a class="header-card-user" href="/reader/JewelJul">
+                      <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+                    </a>
+                    <p class="header-card__date" href="#">15 часов назад</p>
+                    <a class="header-card-user__name" href="#">BoshartAmove</a>
+                    <div class="header-card__category" href="#">получила значок</div>
+                  </div>
+
+                  <div class="lenta-card__badge">
+                    <img src="img/Badge.jpg" width="64" height="64" alt="Давно на Лайвлибе">
+                    <p>Давно на Лайвлибе</p>
+                  </div>                    
+                </li>
+                <li class="statuses-card">
+                  <div class="header-card">
+                    <a class="header-card-user" href="/reader/JewelJul">
+                      <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+                    </a>
+                    <p class="header-card__date" href="#">6 часов назад</p>
+                    <a class="header-card-user__name" href="#">Scar_Head</a>
+                    <div class="header-card__category" href="#">Прочитал книгу <span class="lenta-card__mymark">5</span></div>
+                  </div>
+                  <div class="lenta-card-book">
+                    <a class="lenta-card-book__link" href="#">
+                      <img class="lenta-card-book__img" src="img/Guzel_Yahina__Zulejha_otkryvaet_glaza.jpeg" width="100%" height="100%" alt="">
+                    </a>
+                    <div class="lenta-card-book__wrapper">
+                      <a class="lenta-card__book-title" href="#">Стрелок. Извлечение троих. Бесплодные...</a>
+                      <p class="lenta-card__author-wrap">
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>&#44;
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>
+                      </p>
+                      <div class="btn-add-plus__wrapper">
+                        <a class="btn-add-plus" href="#"><i></i></a>
+                        <div class="btn-add-plus__menu-block">
+                          <p class="btn-add-plus__status">Хочу прочитать</p>
+                          <a class="btn-add-plus__change" href="#">Изменить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="statuses-card">
+                  <div class="header-card">
+                    <a class="header-card-user" href="/reader/JewelJul">
+                      <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+                    </a>
+                    <p class="header-card__date" href="#">6 часов назад</p>
+                    <a class="header-card-user__name" href="#">Scar_Head</a>
+                    <div class="header-card__category" href="#">Прочитал книгу <span class="lenta-card__mymark">5</span></div>
+                  </div>
+                  <div class="lenta-card-book">
+                    <a class="lenta-card-book__link" href="#">
+                      <img class="lenta-card-book__img" src="img/Guzel_Yahina__Zulejha_otkryvaet_glaza.jpeg" width="100%" height="100%" alt="">
+                    </a>
+                    <div class="lenta-card-book__wrapper">
+                      <a class="lenta-card__book-title" href="#">Стрелок. Извлечение троих. Бесплодные...</a>
+                      <p class="lenta-card__author-wrap">
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>&#44;
+                        <a class="lenta-card__author" href="">Стивен Кинг</a>
+                      </p>
+                      <div class="btn-add-plus__wrapper">
+                        <a class="btn-add-plus" href="#"><i></i></a>
+                        <div class="btn-add-plus__menu-block">
+                          <p class="btn-add-plus__status">Хочу прочитать</p>
+                          <a class="btn-add-plus__change" href="#">Изменить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <article class="discussiongroup-card lenta__item">
+          <div class="header-card">                  
+            <a class="header-card-user" href="#">
+              <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+            </a>
+            <a class="header-card-user__name">Arlett</a>
+            <a class="header-card__category" href="#">обсуждение в группе <b>Новости</b></a>
+            <div class="header-card__menu">
+              <div class="header-card__menu-block">
+                <a href="#">Пожаловаться</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="lenta-card">
+            <a class="lenta-card-book__link" href="#">
+              <div class="lenta-card__picture-wrapper">
+                <img class="lenta-card__picture" src="img/Kinana.png" width="100%" height="100%">
+              </div>                    
+            </a>
+          
+            <div class="lenta-card__details">
+              <p class="lenta-card__date">30 июня 2019 г.</p>
+              <p class="lenta-card__aliases">18K</p>
+            </div>
+            <h3 class="lenta-card__title"><a href="">На Монблане открыли книжный магазин</a></h3>    
+            <div class="lenta-card__text">                 
+              <p>Вы когда-нибудь читали книжечку на высоте 3466 метров? Теперь у вас есть такая возможность, ведь в Италии открыли первый книжный магазин высоко в горах.</p>
+              <p>Итальянскую книжную лавку «La Feltrinelli 3466» разместили в самой высокой точке Европы – на склоне Монблана. Кажется, на сегодняшний день это один из самых необычных книжных в мире.</p>
+              <p>Книжные полки магазина полностью занимают один из этажей станции Punta Helbronner фуникулёра SkyWay. Вот уже 4 года этот фуникулёр помогает туристам-лыжникам добраться до престижных горнолыжных курортов и насладиться спортом, отдыхом и панорамой гор.</p>
+              <p>А теперь здесь можно будет почитать и купить книгу. В ассортименте почти 2000 произведений, начиная от альбомов по искусству и гастрономических книг, посвящённых местной кухне, и заканчивая мировыми бестселлерами и детской литературой. Интерьер у магазина классический, «изюминку» месту придаёт захватывающий дух вид из окна.</p>
+              <p>Главное, собираясь за книгами, не забудьте полную экипировку – на высоте 3466 метров может быть весьма прохладно.</p>
+              <p>Это, кстати, не единственный диковинный книжный в Италии – в Венеции, скажем, можно посетить лавку Луиджи, в которой книги хранятся сложенными в гигантскую гондолу.</p>
+              <div class="lenta-card__source">Фотография: <a href="">www.illibraio.it</a></div>
+              <div class="lenta-card__source">Источник: <a href="#">ReadRate</a></div>                  
+            </div>
+          </div>
+    
+          <div class="footer-card">
+            <div class="footer-card__soc-active sab">
+              <a class="sab__link icon-like" href="#">179</a>
+              <a class="sab__link icon-comment" href="#">231</a>
+              <a class="sab__link icon-bookmark" href="#">38</a>
+            </div>
+            <div class="sab__wrapper"> 
+              <a class="sab__link icon-share" href="#">38</a>
+              <div class="sab__detailing">
+                <p class="sab__title">Поделится</p>
+                <p class="sab__text">Выберите социальную сеть</p>
+                <div class="sab__inner-detailing">                   
+                  <a class="sab__user icon-vk" href="#"></a>
+                  <a class="sab__user icon-fb" href="#"></a>
+                  <a class="sab__user icon-ok" href="#"></a>
+                  <a class="sab__user icon-tw" href="#"></a>
+                  <a class="sab__user icon-mail" href="#"></a>
+                  <a class="sab__user icon-lj" href="#"></a>
+                  <a class="sab__user icon-li" href="#"></a>
+                </div>
+              </div>
+            </div>                 
+          </div>
+        </article> 
+
+        <article class="discussiongroup-card lenta__item">
+          <div class="header-card">                  
+            <a class="header-card-user" href="#">
+              <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+            </a>
+            <a class="header-card-user__name">Arlett</a>
+            <a class="header-card__category" href="#">обсуждение</a>
+            <div class="header-card__menu">
+              <div class="header-card__menu-block">                
+                <a href="#">Пожаловаться</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="lenta-card">
+            <div class="lenta-card__details">
+              <p class="lenta-card__date">30 июня 2019 г.</p>
+              <p class="lenta-card__aliases">18K</p>
+            </div>
+            <h3 class="lenta-card__title">На Монблане открыли книжный магазин</h3>    
+            <div class="lenta-card__text">                 
+              <p>Вы когда-нибудь читали книжечку на высоте 3466 метров? Теперь у вас есть такая возможность, ведь в Италии открыли первый книжный магазин высоко в горах.</p>
+              <p>Итальянскую книжную лавку «La Feltrinelli 3466» разместили в самой высокой точке Европы – на склоне Монблана. Кажется, на сегодняшний день это один из самых необычных книжных в мире.</p>
+              <p>Книжные полки магазина полностью занимают один из этажей станции Punta Helbronner фуникулёра SkyWay. Вот уже 4 года этот фуникулёр помогает туристам-лыжникам добраться до престижных горнолыжных курортов и насладиться спортом, отдыхом и панорамой гор.</p>
+              <p>А теперь здесь можно будет почитать и купить книгу. В ассортименте почти 2000 произведений, начиная от альбомов по искусству и гастрономических книг, посвящённых местной кухне, и заканчивая мировыми бестселлерами и детской литературой. Интерьер у магазина классический, «изюминку» месту придаёт захватывающий дух вид из окна.</p>
+              <p>Главное, собираясь за книгами, не забудьте полную экипировку – на высоте 3466 метров может быть весьма прохладно.</p>
+              <p>Это, кстати, не единственный диковинный книжный в Италии – в Венеции, скажем, можно посетить лавку Луиджи, в которой книги хранятся сложенными в гигантскую гондолу.</p>
+              <div class="lenta-card__source">Фотография: <a href="">www.illibraio.it</a></div>
+              <div class="lenta-card__source">Источник: <a href="#">ReadRate</a></div>                 
+            </div>
+          </div>
+    
+          <div class="footer-card">
+            <div class="footer-card__soc-active sab">
+              <a class="sab__link icon-like" href="#">179</a>
+              <a class="sab__link icon-comment" href="#">231</a>
+              <a class="sab__link icon-bookmark" href="#">38</a>
+            </div>
+            <div class="sab__wrapper"> 
+              <a class="sab__link icon-share" href="#">38</a>
+              <div class="sab__detailing">
+                <p class="sab__title">Поделится</p>
+                <p class="sab__text">Выберите социальную сеть</p>                   
+                <div class="sab__inner-detailing">                   
+                  <a class="sab__user icon-vk" href="#"></a>
+                  <a class="sab__user icon-fb" href="#"></a>
+                  <a class="sab__user icon-ok" href="#"></a>
+                  <a class="sab__user icon-tw" href="#"></a>
+                  <a class="sab__user icon-mail" href="#"></a>
+                  <a class="sab__user icon-lj" href="#"></a>
+                  <a class="sab__user icon-li" href="#"></a>
+                </div>
+              </div>
+            </div>                  
+          </div>
+        </article>
+
+        <article class="event-card lenta__item">
+          <div class="header-card">                  
+            <a class="header-card-user" href="#">
+              <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+            </a>
+            <a class="header-card-user__name" href="#">info</a>
+            <a class="header-card__category" href="#">мероприятие</a>
+            <div class="header-card__menu">
+              <div class="header-card__menu-block">
+                <a href="#">Пожаловаться</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lenta-card">
+            <div class="lenta-card__details">
+              <a href="#" class="lenta-card__location">Москва</a>
+              <a href="#" class="lenta-card__aliases">Встречи с авторами</a>
+            </div>
+            <h3 class="lenta-card__title">
+              <span class="lenta-card__date-event">16 июля </span>Слова и музыка Дэвида Кинана: как андеграундный рокер стал известным писателем?</h3>             
+            <div class="lenta-card__text">                 
+              <p>Дэвид Кинан прошёл путь от музыканта в группе «18 Wheeler», выступавшей, в числе прочего, на разогреве у «Oasis», до ведущего музыкального критика в культовом издании «TheДэвид Кинан прошёл путь от музыканта в группе «18 Wheeler», выступавшей, в числе прочего, на разогреве у «Oasis», до ведущего музыкального критика в культовом издании «The</p>
+            </div>
+          </div>
+    
+          <div class="footer-card">
+            <div class="footer-card__soc-active sab">
+              <a class="sab__link icon-like" href="#">179</a>
+              <a class="sab__link icon-comment" href="#">231</a>
+              <a class="sab__link icon-bookmark" href="#">38</a>
+            </div>
+            <div class="sab__wrapper"> 
+              <a class="sab__link icon-share" href="#">38</a>
+              <div class="sab__detailing">
+                <p class="sab__title">Поделится</p>
+                <p class="sab__text">Выберите социальную сеть</p>
+                <div class="sab__inner-detailing">                   
+                  <a class="sab__user icon-vk" href="#"></a>
+                  <a class="sab__user icon-fb" href="#"></a>
+                  <a class="sab__user icon-ok" href="#"></a>
+                  <a class="sab__user icon-tw" href="#"></a>
+                  <a class="sab__user icon-mail" href="#"></a>
+                  <a class="sab__user icon-lj" href="#"></a>
+                  <a class="sab__user icon-li" href="#"></a>
+                </div>
+              </div>
+            </div>                 
+          </div>
+        </article>
+
+        <article class="new-block">
+         
+        </article>
+
+        <article class="top-slide lenta__item">
+          <h3 class="lenta__title">Топ 20 новинок</h3>
+          <div class="slide-book">
+            <div class="slide-book__limiter">
+              <ul class="slide-book__list">
+                <li class="slide-book__item">
+                  <span class="slide-book__status">Новинка</span>
+                  <a class="slide-book__link" href="#">
+                    <img src="img/Hanya_Yanagihara__Malenkaya_zhizn.jpeg" width="100%" height="auto" alt="Танцующая на гребне волны">
+                  </a>
+                  <div class="slide-book__wrapper">
+                    <a class="slide-book__title" href="#">Искусство легких касаний</a>
+                    <div class="slide-book__menu">
+                      <div class="slide-book__menu-block">
+                        <a href="#">Поделиться</a>
+                      </div>
+                    </div>
+                    <a class="slide-book__author" href="#">Виктор Пелевин</a>
+                    <div class="slide-book__rating">3,9</div>
+                    <div id="source-buy-btn" class="btn-buy-holder">
+                      <a class="slide-book__buy" href="#">Купить</a>                        
+                    </div>
+                    <a class="btn-add-plus btn-add-plus--add" href=""><i></i></a>
+                  </div>
+                </li>
+                <li class="slide-book__item">
+                  <a class="slide-book__link" href="#">
+                    <img src="img/avatar-JewelJul.png" width="100%" height="auto" alt="Танцующая на гребне волны">
+                  </a>
+                  <div class="slide-book__wrapper">
+                    <a class="slide-book__title" href="#">Город женщин</a>
+                    <div class="slide-book__menu">
+                      <div class="slide-book__menu-block">
+                        <a href="#">Поделиться</a>
+                      </div>
+                    </div>
+                    <a class="slide-book__author" href="#">Элизабет Гилберт</a>
+                    <div class="slide-book__rating">3,9</div>
+                    <div id="source-buy-btn" class="btn-buy-holder">
+                      <a class="slide-book__buy" href="#">Купить</a>                        
+                    </div>
+                    <a class="btn-add-plus" href=""><i></i></a>
+                  </div>
+                </li>
+                <li class="slide-book__item">
+                  <a class="slide-book__link" href="#">
+                    <img src="img/Helen_Ueker__Golem_i_dzhinn.jpeg" width="100%" height="auto" alt="Танцующая на гребне волны">
+                  </a>
+                  <div class="slide-book__wrapper">
+                    <a class="slide-book__title" href="#">Другая правда. Том 1</a>
+                    <div class="slide-book__menu">
+                      <div class="slide-book__menu-block">
+                        <a href="#">Поделиться</a>
+                      </div>
+                    </div>
+                    <a class="slide-book__author" href="#">Александра Маринина</a>
+                    <div class="slide-book__rating">3,9</div>
+                    <div id="source-buy-btn" class="btn-buy-holder">
+                      <a class="slide-book__buy" href="#">Купить</a>                        
+                    </div>
+                    <a class="btn-add-plus" href=""><i></i></a>
+                  </div>
+                </li>
+                <li class="slide-book__item">
+                  <a class="slide-book__link" href="#">
+                    <img src="img/Hanya_Yanagihara__Malenkaya_zhizn.jpeg" width="100%" height="auto" alt="Танцующая на гребне волны">
+                  </a>
+                  <div class="slide-book__wrapper">
+                    <a class="slide-book__title" href="#">Танцующая на гребне волны</a>
+                    <div class="slide-book__menu">
+                      <div class="slide-book__menu-block">
+                        <a href="#">Поделиться</a>
+                      </div>
+                    </div>
+                    <a class="slide-book__author" href="#">Карен Уайт</a>
+                    <div class="slide-book__rating">3,9</div>
+                    <div id="source-buy-btn" class="btn-buy-holder">
+                      <a class="slide-book__buy" href="#">Купить</a>                        
+                    </div>
+                    <a class="btn-add-plus" href=""><i></i></a>
+                  </div>
+                </li>
+                <li class="slide-book__item">
+                  <a class="slide-book__link" href="#">
+                    <img src="img/Hanya_Yanagihara__Malenkaya_zhizn.jpeg" width="100%" height="auto" alt="Танцующая на гребне волны">
+                  </a>
+                  <div class="slide-book__wrapper">
+                    <a class="slide-book__title" href="#">Танцующая на гребне волны</a>
+                    <div class="slide-book__menu">
+                      <div class="slide-book__menu-block">
+                        <a href="#">Поделиться</a>
+                      </div>
+                    </div>
+                    <a class="slide-book__author" href="#">Карен Уайт</a>
+                    <div class="slide-book__rating">3,9</div>                    
+                    <div id="source-buy-btn" class="btn-buy-holder">
+                      <a class="slide-book__buy" href="#">Купить</a>                        
+                    </div>
+                    <a class="btn-add-plus" href=""><i></i></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="distribution-slide lenta__item">
+          <h3 class="lenta__title">Раздачи книг</h3>
+          <a href="#" class="lenta__show-all">Всего 4</a>
+          <p>Поставьте лайк записи с понравившейся книгой и дождитесь окончания раздачи.
+            <a href="">Подробнее читайте в правилах.</a> Тонкости проведения раздач вы можете узнать в <a href="">FAQ.</a></p>
+          <div class="slide-book">
+            <div class="slide-book__limiter">
+              <ul class="slide-book__list">
+                <li class="slide-book__item">
+                  <span class="slide-book__status">Новинка</span>
+                  <a class="slide-book__link" href="#">
+                    <img src="img/Hanya_Yanagihara__Malenkaya_zhizn.jpeg" width="100%" height="auto" alt="Танцующая на гребне волны">
+                  </a>
+                  <div class="slide-book__wrapper">
+                    <a class="slide-book__title" href="#">Искусство легких касаний</a>
+                    <div class="slide-book__menu">
+                      <div class="slide-book__menu-block">
+                        <a href="#">Поделиться</a>
+                      </div>
+                    </div>
+                    <a class="slide-book__author" href="#">Виктор Пелевин</a>
+                    <div class="slide-book__rating">3,9</div>
+                    <div id="source-buy-btn" class="btn-buy-holder">
+                      <a class="slide-book__buy" href="#">Купить</a>                        
+                    </div>
+                    <a class="btn-add-plus btn-add-plus--add" href=""><i></i></a>
+                  </div>
+                </li>
+                <li class="slide-book__item">
+                  <a class="slide-book__link" href="#">
+                    <img src="img/avatar-JewelJul.png" width="100%" height="auto" alt="Танцующая на гребне волны">
+                  </a>
+                  <div class="slide-book__wrapper">
+                    <a class="slide-book__title" href="#">Город женщин</a>
+                    <div class="slide-book__menu">
+                      <div class="slide-book__menu-block">
+                        <a href="#">Поделиться</a>
+                      </div>
+                    </div>
+                    <a class="slide-book__author" href="#">Элизабет Гилберт</a>
+                    <div class="slide-book__rating">3,9</div>
+                    <div id="source-buy-btn" class="btn-buy-holder">
+                      <a class="slide-book__buy" href="#">Купить</a>                        
+                    </div>
+                    <a class="btn-add-plus" href=""><i></i></a>
+                  </div>
+                </li>
+                <li class="slide-book__item">
+                  <a class="slide-book__link" href="#">
+                    <img src="img/Helen_Ueker__Golem_i_dzhinn.jpeg" width="100%" height="auto" alt="Танцующая на гребне волны">
+                  </a>
+                  <div class="slide-book__wrapper">
+                    <a class="slide-book__title" href="#">Другая правда. Том 1</a>
+                    <div class="slide-book__menu">
+                      <div class="slide-book__menu-block">
+                        <a href="#">Поделиться</a>
+                      </div>
+                    </div>
+                    <a class="slide-book__author" href="#">Александра Маринина</a>
+                    <div class="slide-book__rating">3,9</div>
+                    <div id="source-buy-btn" class="btn-buy-holder">
+                      <a class="slide-book__buy" href="#">Купить</a>                        
+                    </div>
+                    <a class="btn-add-plus" href=""><i></i></a>
+                  </div>
+                </li>
+                <li class="slide-book__item">
+                  <a class="slide-book__link" href="#">
+                    <img src="img/Hanya_Yanagihara__Malenkaya_zhizn.jpeg" width="100%" height="auto" alt="Танцующая на гребне волны">
+                  </a>
+                  <div class="slide-book__wrapper">
+                    <a class="slide-book__title" href="#">Танцующая на гребне волны</a>
+                    <div class="slide-book__menu">
+                      <div class="slide-book__menu-block">
+                        <a href="#">Поделиться</a>
+                      </div>
+                    </div>
+                    <a class="slide-book__author" href="#">Карен Уайт</a>
+                    <div class="slide-book__rating">3,9</div>
+                    <div id="source-buy-btn" class="btn-buy-holder">
+                      <a class="slide-book__buy" href="#">Купить</a>                        
+                    </div>
+                    <a class="btn-add-plus" href=""><i></i></a>
+                  </div>
+                </li>
+                <li class="slide-book__item">
+                  <a class="slide-book__link" href="#">
+                    <img src="img/Hanya_Yanagihara__Malenkaya_zhizn.jpeg" width="100%" height="auto" alt="Танцующая на гребне волны">
+                  </a>
+                  <div class="slide-book__wrapper">
+                    <a class="slide-book__title" href="#">Танцующая на гребне волны</a>
+                    <div class="slide-book__menu">
+                      <div class="slide-book__menu-block">
+                        <a href="#">Поделиться</a>
+                      </div>
+                    </div>
+                    <a class="slide-book__author" href="#">Карен Уайт</a>
+                    <div class="slide-book__rating">3,9</div>                    
+                    <div id="source-buy-btn" class="btn-buy-holder">
+                      <a class="slide-book__buy" href="#">Купить</a>                        
+                    </div>
+                    <a class="btn-add-plus" href=""><i></i></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card lenta__item">
+          <div class="header-card">                  
+            <a class="header-card-user" href="#">
+              <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+            </a>
+            <a class="header-card-user__name">Книжное государство</a>
+            <a class="header-card__category" href="#">игра</a>
+            <a class="header-card__add-select" href=""></a>
+            <div class="header-card__menu">
+              <div class="header-card__menu-block">
+                <a href="#">Пожаловаться</a>
+              </div>
+            </div>
+          </div>
+          <div class="lenta-card">              
+            <a class="lenta-card-book__link" href="#">
+              <div class="lenta-card__picture-wrapper">
+                <img class="lenta-card__picture" src="img/o-m.jpg" width="100%" height="100%">
+              </div>                    
+            </a>              
+            <div class="lenta-card__details">
+              <p class="lenta-card__date">30 июня 2019 г.</p>
+              <p class="lenta-card__aliases">18K</p>
+            </div>
+            <h3 class="lenta-card__title"><a href="">Книжное государство</a></h3>    
+            <div class="lenta-card__text">
+              <a href="">                 
+                <p>Это увлекательная игра, в которую можно играть как самостоятельно, так и командой в 3 или 5 человек. Суть игры заключается в том, что на один тур Вы становитесь строителем и помогаете отстроить новый город, читая нужные книги. В нашем городе множество замечательных районов, каждый соответствует своей тематике. Выбирая конкретный район, Вы обязуетесь построить шесть обязательных зданий - жилой дом, медицинское учреждение, спасательную службу, учебное заведение, торговый центр и рекреационную зону, а так же построить...</p>
+                <p>Это увлекательная игра, в которую можно играть как самостоятельно, так и командой в 3 или 5 человек.</p>
+                <p>Суть игры заключается в том, что на один тур Вы становитесь строителем и помогаете отстроить новый город, читая нужные книги. В нашем городе множество замечательных районов, каждый соответствует своей тематике. Выбирая конкретный район, Вы обязуетесь построить шесть обязательных зданий - жилой дом, медицинское учреждение, спасательную службу, учебное заведение, торговый центр и рекреационную зону, а так же построить...</p>
+              </a>       
+            </div>
+          </div>
+          <div class="footer-card">
+            <div class="footer-card__soc-active sab">
+              <a class="sab__link icon-like" href="#">179</a>
+              <a class="sab__link icon-comment" href="#">231</a>
+              <a class="sab__link icon-bookmark" href="#">38</a>
+            </div>
+            <div class="sab__wrapper"> 
+              <a class="sab__link icon-share" href="#">38</a>
+              <div class="sab__detailing">
+                <p class="sab__title">Поделится</p>
+                <p class="sab__text">Выберите социальную сеть</p>
+                <div class="sab__inner-detailing">                   
+                  <a class="sab__user icon-vk" href="#"></a>
+                  <a class="sab__user icon-fb" href="#"></a>
+                  <a class="sab__user icon-ok" href="#"></a>
+                  <a class="sab__user icon-tw" href="#"></a>
+                  <a class="sab__user icon-mail" href="#"></a>
+                  <a class="sab__user icon-lj" href="#"></a>
+                  <a class="sab__user icon-li" href="#"></a>
+                </div>
+              </div>
+            </div>                 
+          </div>
+        </article>
+
+        <article class="exchange-card lenta__item">
+          <div class="header-card">
+              <a class="header-card-user">
+                <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+              </a>
+              <a class="header-card-user__name" href="#">Parrie_K</a>
+              <a class="header-card__category" href="#">книгообмен</a>
+              <a class="header-card__overlap" href="#">6%</a>
+              <div class="header-card__menu">
+                <div class="header-card__menu-block">
+                  <a href="#">Пожаловаться</a>
+                </div>
+              </div>
+          </div>
+          <div class="lenta-card">
+            <div class="lenta-card__wrapper">
+              <div class="lenta-card__details">
+                <p class="lenta-card__date">30 июня 2019 г.</p>
+                <p class="lenta-card__aliases">18K</p>
+              </div>
+              <div class="lenta-card-tags">
+                <div class="lenta-card-tags__limiter">
+                  <ul class="lenta-card-tags__list">
+                    <li class="lenta-card-tags__item"><p class="lenta-card__buy">Продам</p></li>
+                    <li class="lenta-card-tags__item"><p class="lenta-card__change">Поменяю</p></li>
+                    <li class="lenta-card-tags__item"><p class="lenta-card__post">Можно почтой</p></li>
+                    <li class="lenta-card-tags__item"><p class="lenta-card__read">Дам почитать</p></li>                         
+                  </ul>
+                </div>
+              </div>
+              <h3 class="lenta-card__title"><a href="">г. Санкт-Пете-рбург</a></h3>
+              <div class="lenta-card__text">
+                <p>У книги состояние новой, только на форзаце жёлтой ручкой написана буква ч или 4 (я не знаю, что это и почему, честно). Отдам за 100 рублей (планируется переезд, нужно срочно избавиться от пылесборников). Чтобы договори</p>
+              </div>
+              <span class="lenta-card__reserved">Книга зарезервирована</span>
+              <a class="lenta-card__write">Написать сообщение</a>              
+            </div>              
+            <div class="lenta-card-book">                     
+              <a class="lenta-card-book__link">
+                <img class="lenta-card-book__img" src="img/Kinana.png" width="100%" height="100%" alt="">
+              </a>
+              <div class="lenta-card-book__wrapper">
+                <a class="lenta-card__book-title">Сумерки</a>
+                <p class="lenta-card__author-wrap">
+                  <a class="lenta-card__author" href="#">Стефани Майер</a>&#44;
+                  <a class="lenta-card__author" href="#">Анджей Сапковский</a>
+                </p>     
+                <div class="lenta-card__rating">3,8</div>
+                <div class="btn-add-plus__wrapper">
+                  <a class="btn-add-plus" href="#"><i></i></a>
+                  <div class="btn-add-plus__menu-block">
+                    <p class="btn-add-plus__status">Хочу прочитать</p>
+                    <a class="btn-add-plus__change" href="#">Изменить</a>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>
+          <div class="footer-card">
+              <div class="footer-card__soc-active">
+                <a class="sab__link icon-like" href="#">179</a>
+                <a class="sab__link icon-comment" href="#">231</a>
+                <a class="sab__link icon-bookmark" href="#">38</a>
+              </div>
+              <div class="sab__wrapper"> 
+                  <a class="sab__link icon-share" href="#">38</a>
+                  <div class="sab__detailing">
+                    <p class="sab__title">Поделится</p>
+                    <p class="sab__text">Выберите социальную сеть</p>
+                    <div class="sab__inner-detailing">                   
+                      <a class="sab__user icon-vk" href="#"></a>
+                      <a class="sab__user icon-fb" href="#"></a>
+                      <a class="sab__user icon-ok" href="#"></a>
+                      <a class="sab__user icon-tw" href="#"></a>
+                      <a class="sab__user icon-mail" href="#"></a>
+                      <a class="sab__user icon-lj" href="#"></a>
+                      <a class="sab__user icon-li" href="#"></a>
+                    </div>
+                  </div>
+              </div>                  
+          </div>
+        </article>
+
+        <article class="discussionbook-card lenta__item">
+          <div class="header-card">                  
+            <a class="header-card-user" href="#">
+              <img class="header-card-user__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="JewelJul">
+            </a>
+            <a class="header-card-user__name">Arlett</a>
+            <a class="header-card__category" href="#">создала обсуждение книг, авторов</a>
+            <div class="header-card__menu">
+              <div class="header-card__menu-block">
+                <a href="#">Пожаловаться</a>
+              </div>
+            </div>
+          </div>
+          <div class="lenta-card">
+            <div class="lenta-card__wrapper">
+              <h3 class="lenta-card__title">Экранизация книги Коди Кеплингер - «Простушка»</h3>
+              <div class="lenta-card__text">                 
+                <p>Качок, ботан, рокер, стерва – в каждой компании есть персонажи с такими кличками. Бьянка Пайпер не подозревает, как ее зовут за ее спиной. Качок, ботан, рокер, стерва – в каждой компании есть персонажи с такими кличками. Бьянка Пайпер не подозревает, как ее зовут за ее спиной.</p>           
+              </div>
+            </div>
+            
+              <div class="lenta-card__details">
+                <p class="lenta-card__date">30 июня 2019 г.</p>
+                <p class="lenta-card__aliases">18K</p>
+              </div>
+              
+              <div class="lenta-card-comment">
+                <div class="lenta-card-comment__item">
+                  <img class="lenta-card-comment__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="">
+                  <div class="lenta-card-comment__author">cadie_allein</div>
+                  <div class="lenta-card-comment__date">8 часов назад</div>
+                  <div class="lenta-card-comment__text">
+                      Смотрела давно вместе с подругой) Хотелось чего-то лёгкого и "для девочек". В принципе, со своей... еще
+                  </div>    
+                </div>
+                <div class="lenta-card-comment__item">
+                  <img class="lenta-card-comment__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="">
+                  <div class="lenta-card-comment__author">DarbroMonarchial</div>
+                  <div class="lenta-card-comment__date">7 часов назад</div>
+                  <div class="lenta-card-comment__text">
+                      Фильм было интересно посмотреть только ради того, чтобы сравнить с книгой. Но, по сути, из книги... еще
+                  </div>    
+                </div>
+                <div class="lenta-card-comment__item">
+                  <img class="lenta-card-comment__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="">
+                  <div class="lenta-card-comment__author">GulnaraApakova</div>
+                  <div class="lenta-card-comment__date">4 часов назад</div>
+                  <div class="lenta-card-comment__text">
+                      Ну, я уже писала, что мне больше понравилась сама книга, хотя пока я ее не прочитала, вполне споко... еще
+                  </div>    
+                </div>
+                <a class="lenta-card-comment__show-all" href="#">Посмотреть все комментарии (<span>14</span>)</a>
+                <div class="lenta-card-comment__new">
+                  <img class="lenta-card-comment__avatar" src="img/avatar-JewelJul.png" width="100%" height="100%" alt="">
+                  <label for="comment"></label>
+                  <textarea placeholder="Написать комментарий..." name="comment" id="comment"></textarea>
+                  <button type="submit">Добавить</button>    
+                </div>
+              </div>             
+            
+          </div>
+          <div class="footer-card">
+            <div class="footer-card__soc-active sab">
+              <a class="sab__link icon-like" href="#">179</a>
+              <a class="sab__link icon-comment" href="#">231</a>
+              <a class="sab__link icon-bookmark" href="#">38</a>
+            </div>
+            <div class="sab__wrapper"> 
+              <a class="sab__link icon-share" href="#">38</a>
+              <div class="sab__detailing">
+                <p class="sab__title">Поделится</p>
+                <p class="sab__text">Выберите социальную сеть</p>
+                <div class="sab__inner-detailing">                   
+                  <a class="sab__user icon-vk" href="#"></a>
+                  <a class="sab__user icon-fb" href="#"></a>
+                  <a class="sab__user icon-ok" href="#"></a>
+                  <a class="sab__user icon-tw" href="#"></a>
+                  <a class="sab__user icon-mail" href="#"></a>
+                  <a class="sab__user icon-lj" href="#"></a>
+                  <a class="sab__user icon-li" href="#"></a>
+                </div>
+              </div>
+            </div>                 
+          </div>
+        </article>
+
+      </section>
+    </main>
+    
+    <footer class="page-footer">        
+      <ul class="page-footer__list">
+        <li><a href="#">Предложить улучшение</a></li>
+        <li><a href="#">Сообщить об ошибке</a></li>        
+        <li><a href="#">Связаться с администрацией</a></li>        
+        <li><a href="#">Политика обработки персональных данных</a></li>        
+        <li><a href="#">Пользовательское соглашение</a></li>        
+        <li><a href="#">Бесплатные книги</a></li>        
+        <li><a href="#">Полная версия</a></li>
+      </ul>
+      <div class="page-footer-soc">
+        <span class="page-footer-soc__title">Скачать приложение</span>
+        <a class="page-footer-soc__link icon-gp-f" href="#"></a>
+        <a class="page-footer-soc__link icon-app-f" href="#"></a>
+      </div>
+      <div class="page-footer-soc">
+        <span class="page-footer-soc__title">Мы в соцсетях</span>
+        <a class="page-footer-soc__link icon-in-f" href="#"></a>        
+        <a class="page-footer-soc__link icon-vk-f" href="#"></a>
+        <a class="page-footer-soc__link icon-fb-f" href="#"></a>
+        <a class="page-footer-soc__link icon-ok-f" href="#"></a>
+        <a class="page-footer-soc__link icon-zen-f" href="#"></a>
+      </div>
+      <div class="page-footer__wrapper">
+        <p class="page-footer__copyright">© Лайвлиб 2006-2019</p>
+        <a href="http://www.liveinternet.ru/click" target="_blank">
+          <img width="88" height="15" src="https://counter.yadro.ru/logo?26.11" alt="LiveInternet: показано число посетителей за сегодня"></a>
+        <p class="page-footer__age">16+</p>
+      </div>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="js/readmore.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script> 
+    
+  </body>
+</html>
